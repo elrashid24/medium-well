@@ -1,0 +1,2 @@
+module ClapsHelper
+end
