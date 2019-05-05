@@ -5,6 +5,8 @@ class SessionForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            firstname: '',
+            lastname: '',
             email: '',
             password: ''
         };
@@ -20,12 +22,12 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user).then(this.props.closeModal);
     }
 
     renderErrors() {
         return (
-            <ul>
+            <ul className="login-errors">
                 {this.props.errors.map((error, i) => (
                     <li key={`error-${i}`}>
                         {error}
@@ -35,38 +37,104 @@ class SessionForm extends React.Component {
         );
     }
 
-    render() {
-        return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    Welcome to Medium Well!
-          <br />
-                    Please {this.props.formType} or {this.props.navLink}
-                    {this.renderErrors()}
-                    <div>
-                        <br />
-                        <label>email:
-              <input type="text"
-                                value={this.state.email}
-                                onChange={this.update('email')}
-                            
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-              <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                
-                            />
-                        </label>
-                        <br />
-                        <input type="submit" value={this.props.formType} />
-                    </div>
-                </form>
-            </div>
-        );
-    }
-}
+    render(){
+        
+       if (this.props.formType === 'signup'){
+           
+           return(
+               <div className='create-user-l1'>
+                    <div onCick={this.props.closeModal} className='x'>&times;</div>
+                    <form className ='create-user-l2' onSubmit={this.handleSubmit}>
+                        <h1 className ='create/login-user-title'>Let's Get Started!</h1>
+                        <br/>
 
+                       <div className='user-info-l1'>
+                       <br/>
+
+                           <label>
+                               <input type="text"
+                                   value={this.state.firstname}
+                                   onChange={this.update('firstname')}
+                                   className="create-user-input"
+                                   placeholder="first name"
+                               />
+                           </label>
+
+                           <br />
+                           <label>
+                               <input type="text"
+                                   value={this.state.lastname}
+                                   onChange={this.update('lastname')}
+                                   className="create-user-input"
+                                   placeholder="last name"
+                               />
+                           </label>
+
+                           <br />
+                           <label>
+                               <input type="text"
+                                   value={this.state.email}
+                                   onChange={this.update('email')}
+                                   className="create-user-input"
+                                   placeholder="email"
+                               />
+                           </label>
+                           <br />
+                           <label>
+                               <input type="password"
+                                   value={this.state.password}
+                                   onChange={this.update('password')}
+                                   className="create-user-input"
+                                   placeholder="password"
+                               />
+                           </label>
+                           <br/>
+                           <input className="session-submit" type="submit" value="Start Reading!" />
+                       </div>
+                    </form>
+                   <div className='opposite-modal'>
+                       {this.props.otherForm}
+                   </div>
+               </div>
+           );
+       } else {
+           return(
+               <div className='login-user-l1'>
+               <div onClick={this.props.closeModal} className='x'>&times;</div>
+                <form onSubmit={this.handleSubmit} className='login-user-l2'>
+                <h1 className='create/login-user-title'>Jump Back in!</h1>
+                <br/>
+                       <div className='user-info-l1'>
+                        <br/>
+                           <label>
+                               <input type="text"
+                                   value={this.state.email}
+                                   onChange={this.update('email')}
+                                   className="login-input"
+                                   placeholder="email"
+                               />
+                           </label>
+                           <br />
+                           <label>
+                               <input type="password"
+                                   value={this.state.password}
+                                   onChange={this.update('password')}
+                                   className="login-input"
+                                   placeholder="password"
+                               />
+                           </label>
+                           <br />
+                           <input className="session-submit" type="submit" value="Sign In" />
+                       </div>
+                </form>
+                    <div className ='opposite-modal'>
+                        {this.props.otherForm}
+                    </div>
+               </div>
+           )
+       }
+        
+        
+           }
+}
 export default withRouter(SessionForm);
