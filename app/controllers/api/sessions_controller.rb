@@ -9,7 +9,7 @@ class Api::SessionsController < ApplicationController
       sign_in(@user)
       render 'api/users/show'
     else
-      render json: ["Please enter a valid email address."], status: 401
+      render json: ["Please enter a valid email address and password to continue."], status: 401
     end
   end
 

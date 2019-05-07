@@ -4,13 +4,19 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(255, 255, 255);
   z-index: 10;
 }
 
 .modal-child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+ background-image: url(https://cdn-images-1.medium.com/max/900/1*Cs2lqW1GyoPdYqs1U0Xudg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: -1px 1px 5px 5px rgba(184,184,184,0.75);
+    width: 900px;
+    height: 550px;
+    position: absolute; 
+    border-radius: 4px; 
 }

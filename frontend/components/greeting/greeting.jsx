@@ -6,21 +6,20 @@ import {openModal} from '../../actions/modal_actions'
 
 const Greeting = ({ currentUser, logout, openModal }) => {
     const sessionLinks = () => (
-        <nav className="login-signup">
-           <div className ="Title">
-                Medium Well
-           </div>
+        <nav className="nav-buttons">
+            {/* <div className='header-link'>
+                <Link to="/" >Medium Well</Link>
+            </div> */}
             <button className="login-b" onClick={() => openModal('login')}>Sign in</button>
             &nbsp;&nbsp;
-            <button className="sign-in-b" onClick={() => openModal('signup')}>Get started!</button>
+            <button className="signup-b" onClick={() => openModal('signup')}>Get started!</button>
             &nbsp;&nbsp;
         </nav>
     );
     const personalGreeting = () => (
-        <hgroup className="header-group">
-            <h2 className="header-name">Hi, {currentUser.email} !</h2>
-            <button className="header-button" onClick={logout}>Log Out</button>
-        </hgroup>
+            <nav className='nav-buttons'>
+                <button className="logout-button" onClick={logout}>Log Out</button>
+            </nav>
     );
 
     return currentUser ? personalGreeting() : sessionLinks();
@@ -28,3 +27,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
 
 
 export default Greeting;
+
+
+//adds logout button within nav bar 

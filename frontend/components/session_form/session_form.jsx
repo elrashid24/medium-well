@@ -13,6 +13,12 @@ class SessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    // componentDidUpdate() {
+    //  return this.props.clearErrors();
+    // }
+
+    comp
+
     update(field) {
         return e => this.setState({
             [field]: e.currentTarget.value
@@ -45,8 +51,11 @@ class SessionForm extends React.Component {
                <div className='create-user-l1'>
                     <div onCick={this.props.closeModal} className='x'>&times;</div>
                     <form className ='create-user-l2' onSubmit={this.handleSubmit}>
-                        <h1 className ='create/login-user-title'>Let's Get Started!</h1>
+                        <h1 className ='session-title'>Join Medium Well.</h1>
+                        <div className='why-sign'>
+                        </div>
                         <br/>
+                       {this.renderErrors()}
 
                        <div className='user-info-l1'>
                        <br/>
@@ -92,6 +101,7 @@ class SessionForm extends React.Component {
                            <input className="session-submit" type="submit" value="Start Reading!" />
                        </div>
                     </form>
+                   
                    <div className='opposite-modal'>
                        {this.props.otherForm}
                    </div>
@@ -102,8 +112,10 @@ class SessionForm extends React.Component {
                <div className='login-user-l1'>
                <div onClick={this.props.closeModal} className='x'>&times;</div>
                 <form onSubmit={this.handleSubmit} className='login-user-l2'>
-                <h1 className='create/login-user-title'>Jump Back in!</h1>
+                <h1 className='session-title'>Welcome Back.</h1>
                 <br/>
+
+                       {this.renderErrors()}
                        <div className='user-info-l1'>
                         <br/>
                            <label>
@@ -127,7 +139,7 @@ class SessionForm extends React.Component {
                            <input className="session-submit" type="submit" value="Sign In" />
                        </div>
                 </form>
-                    <div className ='opposite-modal'>
+                   <div className ='opposite-modal'>
                         {this.props.otherForm}
                     </div>
                </div>

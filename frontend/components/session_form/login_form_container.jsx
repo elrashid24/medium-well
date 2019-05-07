@@ -18,10 +18,11 @@ const mapDispatchToProps = dispatch => {
         processForm: (user) => dispatch(login(user)),
         otherForm: (
             <button onClick={() => dispatch(openModal('signup'))}>
-              Create Account  
+              Create one 
       </button>
         ),
-        closeModal: () => dispatch(closeModal())
+        closeModal: () => dispatch(closeModal()),
+        clearErrors: () => dispatch(receiveErrors([]))
     };
     
 };

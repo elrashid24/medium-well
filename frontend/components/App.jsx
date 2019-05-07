@@ -13,12 +13,15 @@ import Modal from '../modal/modal';
 
 const App = () => (
     <div>
+        <div className='navBar-l1'>
+            <nav className='nav'>
+                <Link to ='/' className='logo'><h1>Medium Well</h1></Link>
+            </nav>
+        </div>
         <Modal />
-        <Link to ="/" className="header-link">
-        home</Link>
         <GreetingContainer/>
-        
     </div>
 );
 
 export default App;
+
