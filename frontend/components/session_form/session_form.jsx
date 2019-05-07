@@ -11,13 +11,13 @@ class SessionForm extends React.Component {
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemo = this.handleDemo.bind(this);
     }
 
-    // componentDidUpdate() {
-    //  return this.props.clearErrors();
-    // }
+    componentDidMount() {
+        this.props.clearErrors();
+    }
 
-    comp
 
     update(field) {
         return e => this.setState({
@@ -30,6 +30,14 @@ class SessionForm extends React.Component {
         const user = Object.assign({}, this.state);
         this.props.processForm(user).then(this.props.closeModal);
     }
+
+    handleDemo(e) {
+        
+        e.preventDefault();
+            const demoUser = { email: "demouser@gmail.com", password: "123456" };
+           this.props.processForm(demoUser).then(this.props.closeModal); 
+    }
+    
 
     renderErrors() {
         return (
@@ -44,16 +52,14 @@ class SessionForm extends React.Component {
     }
 
     render(){
-        
-       if (this.props.formType === 'signup'){
+    
+        if (this.props.formType === 'signup'){
            
            return(
                <div className='create-user-l1'>
-                    <div onCick={this.props.closeModal} className='x'>&times;</div>
+                    <div onClick={this.props.closeModal} className='x'>&times;</div>
                     <form className ='create-user-l2' onSubmit={this.handleSubmit}>
                         <h1 className ='session-title'>Join Medium Well.</h1>
-                        <div className='why-sign'>
-                        </div>
                         <br/>
                        {this.renderErrors()}
 
@@ -103,7 +109,7 @@ class SessionForm extends React.Component {
                     </form>
                    
                    <div className='opposite-modal'>
-                       {this.props.otherForm}
+                        {this.props.otherForm}
                    </div>
                </div>
            );
@@ -140,13 +146,15 @@ class SessionForm extends React.Component {
                        </div>
                 </form>
                    <div className ='opposite-modal'>
-                        {this.props.otherForm}
+                        No account? {this.props.otherForm}
+                    </div>
+                    <div>
+                        <button className='demo-button' onClick={this.handleDemo}>Demo</button>
                     </div>
                </div>
            )
-       }
-        
-        
+       }    
            }
 }
 export default withRouter(SessionForm);
+
