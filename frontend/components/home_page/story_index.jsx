@@ -23,7 +23,7 @@ class StoryIndex extends React.Component {
                <div>
                    {popularSection}
                </div>
-                
+                    {suggestedStories}
            </div>
         )
 

@@ -5,12 +5,14 @@ export const fetchStories = () => (
     })
 );
 
-export const fetchStory = id => (
+export const fetchStory = id =>{
+    // debugger
+    return(
     $.ajax({
         method: 'GET',
         url: `api/stories/${id}`
-    })
-);
+    }))
+};
 
 export const createStory = story => (
     $.ajax({

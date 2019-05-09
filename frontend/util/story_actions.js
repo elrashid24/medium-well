@@ -9,10 +9,13 @@ const receiveAllStories = (stories) => ({
     stories: stories 
 })
 
-const receiveStory = (story) => ({
-    type: RECEIVE_STORY, 
-    story: story
-})
+const receiveStory = (story) => {
+    // debugger
+    return({
+        story: story,
+        type: RECEIVE_STORY, 
+    })
+}
 
 const removeStory = (story) => ({
     type: REMOVE_STORY, 
@@ -27,7 +30,7 @@ export const fetchStories = () => (dispatch) => (
 ))
 
 export const fetchStory = id => dispatch => (
-    StoryApiUtil.fetchStory(id).then(story => dispatch(receivePost(story)))
+    StoryApiUtil.fetchStory(id).then(story => dispatch(receiveStory(story)))
 );
 
 export const createStory = story => dispatch => (

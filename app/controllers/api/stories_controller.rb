@@ -20,12 +20,14 @@ class Api::StoriesController < ApplicationController
     end
 
     def show
-        @story = Story.find_by(params[:id])
+        # debugger
+        @story = Story.find_by(id: params[:id])
+        # debugger
         render 'api/stories/show'
     end
 
     def update
-        @story = Story.find_by(params[:id])
+        @story = Story.find_by(id: params[:id])
 
         if @Story.update_attributes(story_params)
             render 'api/stories/show'
@@ -35,7 +37,7 @@ class Api::StoriesController < ApplicationController
     end
 
     def destroy 
-        @story = Story.find_by(params[:id])
+        @story = Story.find_by(id: params[:id])
         @story.destroy 
         render 'api/stories/index'
     end

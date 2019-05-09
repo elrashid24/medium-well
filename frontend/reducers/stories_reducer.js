@@ -3,6 +3,7 @@ import {RECEIVE_ALL_STORIES, RECEIVE_STORY, REMOVE_STORY} from '../util/story_ac
 const storiesReducer = (oldState = {}, action) => {
     let newState; 
     Object.freeze(oldState); 
+    // debugger
     switch (action.type) {
         case RECEIVE_ALL_STORIES:
             // debugger 

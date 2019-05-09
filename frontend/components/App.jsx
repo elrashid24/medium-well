@@ -11,6 +11,7 @@ import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from '../modal/modal';
 import StoryIndexContainer from './home_page/story_index_container';
+import StoryShowContainer from './stories/story_show_container';
 
 const App = () => (
     <div>
@@ -21,9 +22,13 @@ const App = () => (
         </div>
         <Modal />
         <GreetingContainer/>
-        <StoryIndexContainer/>
+        <Switch>
+            <Route exact path = '/story/:id' component = {StoryShowContainer}/>
+            <Route path = '/' component = {StoryIndexContainer}/>
+        </Switch>
     </div>
 );
 
 export default App;
+
 
