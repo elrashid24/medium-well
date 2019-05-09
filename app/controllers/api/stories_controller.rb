@@ -1,7 +1,10 @@
 class Api::StoriesController < ApplicationController
+    
+    before_action :signed_in?, only: [:create, :update, :destroy]
+
     def index 
         @stories = Story.all
-        render :index
+        render 'api/stories/index'
     end
 
     def create
@@ -10,14 +13,31 @@ class Api::StoriesController < ApplicationController
         @story.publish_date = Date.new
         
         if @story.save
-            render :show 
+            render 'api/stories/show'
         else 
              render json: @user.errors.full_messages, status: 422
         end
     end
 
     def show
-        @article = 
+        @story = Story.find_by(params[:id])
+        render 'api/stories/show'
+    end
+
+    def update
+        @story = Story.find_by(params[:id])
+
+        if @Story.update_attributes(story_params)
+            render 'api/stories/show'
+        else 
+            render json: @user.errors.full_messages, status: 422
+        end
+    end
+
+    def destroy 
+        @story = Story.find_by(params[:id])
+        @story.destroy 
+        render 'api/stories/index'
     end
 
 
