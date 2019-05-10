@@ -14,6 +14,7 @@ class StoryShow extends React.Component{
     
     render(){
         let story = this.props.story; 
+        console.log(story);
         if (!story) return null;
         return (
             <div>
@@ -28,6 +29,7 @@ class StoryShow extends React.Component{
                 <div className ='show-author'>
                     {story.id}
                 </div>
+                <img className='top-left-pic' src={story.photoUrl ? story.photoUrl : ""} alt="" />
             </div>
         )
     }

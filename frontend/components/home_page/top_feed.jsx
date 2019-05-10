@@ -11,7 +11,6 @@ const TopFeed = ({stories}) => {
                 <h2 >
                     <Link to={`/story/${stories[0].id}`} className='left-top-feed-preview'>{stories[0].body.slice(0, 300)}...</Link>
                 </h2>
-                <img className='dale-redcorn' src={window.images.dale_redcorn}/>
             </div>
             <div className ='top-middle'>
                 <h1>
