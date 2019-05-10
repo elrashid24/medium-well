@@ -16,14 +16,16 @@ class StoryIndex extends React.Component {
         let popularSection = <PopularStories stories ={stories.slice(3,8)}/>
         let suggestedStories = <SuggestedStories stories={stories.slice(8)}/> 
         return(
-           <div >
+           <div className='home' >
                <div>
                     {topSection}
                </div>
                <div>
                    {popularSection}
                </div>
+                <div>
                     {suggestedStories}
+                </div>
            </div>
         )
 

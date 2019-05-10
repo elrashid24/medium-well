@@ -66,8 +66,24 @@ ActiveRecord::Base.transaction do
         publish_date: Date.new)
              
              
+        test_story_3 = Story.create!( title:'The NBA suspended Draymond Green in Game 5 the 2016 Finals to extend the series',
+           
+           body: "In Game 4 of the NBA Finals, LeBron James and Draymond Green became entangled at the top of the arc when Green was trying to set a screen to free Steph Curry. Green hit the floor (James is really big), and James stepped over him, a big no-no in the unwritten rules of on-court machismo. 
+           Green lashed out, flicking his hand into James’ groin and inadvertently setting in motion the greatest NBA Finals in the history of the Association. Green was suspended for Game 5 because of the retaliatory hit, and Warriors fans blamed the NBA for attempting to squeeze more money out of what 
+           was thought to be a dominant Warriors win, neglecting to mention the massive TV-rights bag the Association secured a couple years previously. Because fans are predictable, they also blamed James for [puts on Kangol bucket hat and LRG backpack] snitching. Like the refs somehow didn’t see Green hit Bron in the gonads.
+           Or they had somehow forgotten he’d already kicked Steven Adams in the gibblies during the Western Conference Finals, and body-slammed Michael Beasley, then with the Rockets, even earlier in the playoffs. Suspensions in the playoffs come on a points system,  and Green had exceeded it.
+        Tim Donaghy—disgraced former ref, convict and peddler of delicious Joey Crawford knuckle sandwiches—is the one who sounded the alarm on the conspiracy angle. If you can’t trust a discredited former employee who served time in jail and had an axe to grind, who can you trust? However, let’s not forget 
+        Donaghy’s prescience about the refs working Game 7. It’s preordained, man! Just ask...Ayesha Curry? Yeah, Steph’s wife claimed it was rigged this time for—you guessed it—money, after her hubbie was assessed a sixth foul in a Game 6 loss.Not only that, but when The Ringer wrote about this conspiracy, 
+        the video embed they used suspiciously disappeared. Coincidence, or—nope, it’s a coincidence. Here’s the video (we put a gif above for when the NBA’s Thought Police take it down):We hope this is true just because it makes absolutely no sense, which aligns nicely with our world view since Nov. 8, 2016. 
+        he NBA retroactively awarding Green a flagrant 1 was deserved, and it put him over the playoff limit, thereby keeping him out of Game 5, which I’m still not sure the Warriors would have won with him on the floor (Kyrie Irving and James dropped 41 each, and we’ve never seen some as unconscious from the field—17-for-24—as Irving looked in Game 5).
+        Plus, if the NBA somehow had known a simple and deserved suspension would lead to the first-ever 3-1 comeback in NBA Finals history, against the only team to ever win 73 regular-season games, spearheaded by the greatest player of his generation for a city in the midst of a 52-year championship drought, in a state 
+        that just so happened to be the birthplace of the once-in-a-lifetime player, how can you not be impressed by that total command over the levers of power and influence?",
+           
+        author_id: demoUser.id, 
+            
+        publish_date: Date.new)
              
-     test_story_3 = Story.create!( title:"Michael Jordan's Flu Game was actually a successful attempt to poison MJ",  
+     test_story_4 = Story.create!( title:"Michael Jordan's Flu Game was actually a successful attempt to poison MJ",  
         
         body: "This one could still be true, and the interesting thing about it is that the actual story might be more diabolical than the one falsely repeated before Jordan’s trainer, Tim Grover, set the record straight to True Hoop TV in 2013.     
         Before Game 5 in Salt Lake City, Utah in June of 1997, the hotel where the Bulls were staying stopped serving room service at  9 p.m. Since NBA players keep odd hours, hoping to peak physically around 8 or 9 at night for games, MJ got hungry.
@@ -80,26 +96,6 @@ ActiveRecord::Base.transaction do
      author_id: demoUser.id,
      
      publish_date: Date.new)
-
-        
-     test_story_4 = Story.create!( title:'The NBA suspended Draymond Green in Game 5 the 2016 Finals to extend the series',
-        
-        body: "In Game 4 of the NBA Finals, LeBron James and Draymond Green became entangled at the top of the arc when Green was trying to set a screen to free Steph Curry. Green hit the floor (James is really big), and James stepped over him, a big no-no in the unwritten rules of on-court machismo. 
-        Green lashed out, flicking his hand into James’ groin and inadvertently setting in motion the greatest NBA Finals in the history of the Association. Green was suspended for Game 5 because of the retaliatory hit, and Warriors fans blamed the NBA for attempting to squeeze more money out of what 
-        was thought to be a dominant Warriors win, neglecting to mention the massive TV-rights bag the Association secured a couple years previously. Because fans are predictable, they also blamed James for [puts on Kangol bucket hat and LRG backpack] snitching. Like the refs somehow didn’t see Green hit Bron in the gonads.
-        Or they had somehow forgotten he’d already kicked Steven Adams in the gibblies during the Western Conference Finals, and body-slammed Michael Beasley, then with the Rockets, even earlier in the playoffs. Suspensions in the playoffs come on a points system,  and Green had exceeded it.
-     Tim Donaghy—disgraced former ref, convict and peddler of delicious Joey Crawford knuckle sandwiches—is the one who sounded the alarm on the conspiracy angle. If you can’t trust a discredited former employee who served time in jail and had an axe to grind, who can you trust? However, let’s not forget 
-     Donaghy’s prescience about the refs working Game 7. It’s preordained, man! Just ask...Ayesha Curry? Yeah, Steph’s wife claimed it was rigged this time for—you guessed it—money, after her hubbie was assessed a sixth foul in a Game 6 loss.Not only that, but when The Ringer wrote about this conspiracy, 
-     the video embed they used suspiciously disappeared. Coincidence, or—nope, it’s a coincidence. Here’s the video (we put a gif above for when the NBA’s Thought Police take it down):We hope this is true just because it makes absolutely no sense, which aligns nicely with our world view since Nov. 8, 2016. 
-     he NBA retroactively awarding Green a flagrant 1 was deserved, and it put him over the playoff limit, thereby keeping him out of Game 5, which I’m still not sure the Warriors would have won with him on the floor (Kyrie Irving and James dropped 41 each, and we’ve never seen some as unconscious from the field—17-for-24—as Irving looked in Game 5).
-     Plus, if the NBA somehow had known a simple and deserved suspension would lead to the first-ever 3-1 comeback in NBA Finals history, against the only team to ever win 73 regular-season games, spearheaded by the greatest player of his generation for a city in the midst of a 52-year championship drought, in a state 
-     that just so happened to be the birthplace of the once-in-a-lifetime player, how can you not be impressed by that total command over the levers of power and influence?",
-        
-     author_id: demoUser.id, 
-         
-     publish_date: Date.new)
-
-       
          
      test_story_5 = Story.create!( title:' NBA really rigs the Draft Lottery',
         
@@ -166,12 +162,33 @@ ActiveRecord::Base.transaction do
              
           publish_date: Date.new)
 
-          file_0 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/tigger.jpg')
-          test_story_0.photo.attach(io: file_0, filename: 'tiggah.jpg')
+          file_0 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/mj-flu.jpg')
+          test_story_0.photo.attach(io: file_0, filename: 'mj-flu.jpg')
           
-          file_1 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/lion.jpg')
-          test_story_1.photo.attach(io: file_1, filename: 'lion.jpg')
-
+          file_1 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/pp-wheelchair.jpeg')
+          test_story_1.photo.attach(io: file_1, filename: 'pp-wheelchair.jpg')
+          
+          file_2 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/bron-cramps.jpg')
+          test_story_2.photo.attach(io: file_2, filename: 'bron-cramps.jpg')
+          
+          file_3 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/dray-bron.jpg')
+          test_story_3.photo.attach(io: file_3, filename: 'dray-bron.jpg')
+          
+          file_4 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/flu-2.jpg')
+          test_story_4.photo.attach(io: file_4, filename: 'flu-2.jpg')
+          
+          file_5 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/draft-rig.jpg')
+          test_story_5.photo.attach(io: file_5, filename: 'draft-rig.jpg')
+          
+          file_6 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/next-chapter.jpg')
+          test_story_6.photo.attach(io: file_6, filename: 'next-chapter.jpg')
+          
+          file_7 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/morris.jpg')
+          test_story_7.photo.attach(io: file_7, filename: 'morris.jpg')
+          
+          file_8 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/laker-rig.jpg')
+          test_story_8.photo.attach(io: file_8, filename: 'laker-rig.jpg')
+          
 end
 
 

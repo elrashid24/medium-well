@@ -1,7 +1,7 @@
 .top-feed-container{
     display: flex; 
     width: 100%;
-    padding: 15px;
+    padding: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, .20);
     margin-bottom: 0px;
     font-family:  'medium-content-sans-serif-font'; 
@@ -17,7 +17,7 @@
     width: 30%;
 }
 .top-middle{
-        width: 35%;
+        width: 20%;
     margin-right: 40px;
 }
 
@@ -61,12 +61,44 @@
     color: black;
 }
 
-.dale-redcorn{
-    width: 100px; 
-    height: 100px;
+.top-left-pic{
+    width: 80%;
+    // height: 100%;
+    border-left: 2px solid rgb(300, 300, 300);
+    // border-right: 2px solid rgb(200, 230, 200);
+    border-right: 2px solid rgb(200, 230, 200);
+    color: rgb(110, 110, 110);
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 10%;
 }
 
-// .line-break {
-//   margin: 30px auto 0 auto;
-//   border-bottom: 1px solid rgb(217, 217, 217);
-// }
+.top-left-author{
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.top-middle-pic{
+    width: 200px;
+    height: 100%;
+    border-left: 2px solid rgb(200, 230, 200);
+    // border-right: 2px solid rgb(200, 230, 200);
+    border-right: 2px solid rgb(200, 230, 200);
+    color: rgb(110, 110, 110);
+    padding-left: 20px;
+}
+
+.top-right-pic{
+    width: 200px;
+    height: 100%;
+    border-left: 2px solid rgb(200, 230, 200);
+    // border-right: 2px solid rgb(200, 230, 200);
+    border-right: 2px solid rgb(200, 230, 200);
+    color: rgb(30, 30, 30);
+    padding-left: 40px;
+    padding-right: 5px;
+}

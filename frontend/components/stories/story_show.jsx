@@ -17,19 +17,18 @@ class StoryShow extends React.Component{
         console.log(story);
         if (!story) return null;
         return (
-            <div>
-                <div className ='show-title'>
-                    {story.title}
+            
+            <div className='show-container'>
+                <h1 className='show-title'>{story.title}</h1>
+                <div className ='show-author'>
+                    Kevin Durant
                 </div>
-                
+               <div className='show-pic-container'>
+                    <img className='show-pic' src={story.photoUrl ? story.photoUrl : ""} />
+               </div>
                 <div className ='show-body'>
                     {story.body}
                 </div>
-                
-                <div className ='show-author'>
-                    {story.id}
-                </div>
-                <img className='top-left-pic' src={story.photoUrl ? story.photoUrl : ""} alt="" />
             </div>
         )
     }
