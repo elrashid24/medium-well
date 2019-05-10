@@ -96,3 +96,42 @@ const PopularStories = ({stories}) => {
 export default PopularStories;
 
 
+//0 = AdrianWojnarowski@gmail.com
+//1=ShamsCharania@gmail.com
+//2=NickWright@gmail.com
+//3=StephenAASmith@gmail.com
+//4=SkipBayless@gmail.com
+//5=JimBobCooter@gmail.com
+//6=SavannahJames@gmail.com
+//7=MarkJackson@gmail.com
+////8=VladeDivac@gmail.com
+//9=MaxKellerman@gmail.com
+//10=ShannonSharpe@gmail.com
+//11=KevinDurant@gmail.com
+//12=JalenRose@gmail.com
+//13=CariChampion@gmail.com
+//14=ColinCowherd@gmail.com
+//15=CharlesBarkley@gmail.com
+//16=ErnieJohnson@gmail.com
+//17=KobeBryant@gmail.com
+//18= BradRiely@gmail.com
+
+//0 = Adrian Wojnarowski
+//1=Shams Charania
+//2=Nick Wright
+//3=Stephen A. Smith
+//4=Skip Bayless
+//5=Jim Bob Cooter
+//6=Savannah James
+//7=Mark Jackson
+////8=Vlade Divac
+//9=Max Kellerman
+//10=Shannon Sharpe
+//11=Kevin Durant
+//12=Jalen Rose
+//13=Cari Champion
+//14=Colin Cowherd
+//15=Charles Barkley
+//16=ErnieJ ohnson
+//17=TKobe Bryant
+//18= Brad Riely

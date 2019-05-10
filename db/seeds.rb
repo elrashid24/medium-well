@@ -10,7 +10,26 @@ require 'open-uri'
 ActiveRecord::Base.transaction do 
     User.destroy_all
     Story.destroy_all
-    demoUser = User.create!(first_name: 'demo', last_name: 'user', email: 'demouser@gmail.com', password: '123456')
+    demoUser0 = User.create!(first_name: 'AdrianWojnarowski', last_name: 'Wojnarowski', email: 'AdrianWojnarowski@gmail.com', password: '123456')
+    demoUser1 = User.create!(first_name: 'ShamsCharania', last_name: 'Charania',    email: 'ShamsCharania@gmail.com', password: '123456')
+    demoUser2 = User.create!(first_name: 'NickWright', last_name: 'Wright', email: 'NickWright@gmail.com', password: '123456')
+    demoUser3 = User.create!(first_name: 'Stephen A. Smith', last_name: 'Wojnarowski', email: 'StephenAASmith@gmail.com', password: '123456')
+    demoUser4 = User.create!(first_name: 'Skip Bayless', last_name: 'Wojnarowski', email: 'SkipBayless@gmail.com', password: '123456')
+    demoUser5 = User.create!(first_name: 'Jim Bob Cooter', last_name: 'Wojnarowski', email: 'JimBobCooter@gmail.com', password: '123456')
+    demoUser6 = User.create!(first_name: 'Savannah James', last_name: 'Wojnarowski', email: 'SavannahJames@gmail.com', password: '123456')
+    demoUser7 = User.create!(first_name: 'Mark Jackson', last_name: 'Wojnarowski', email: 'MarkJackson@gmail.com', password: '123456')
+    demoUser8 = User.create!(first_name: 'Vlade Divac', last_name: 'Wojnarowski', email: 'VladeDivac@gmail.com', password: '123456')
+    demoUser9 = User.create!(first_name: 'Max Kellerman', last_name: 'Wojnarowski', email: 'MaxKellerman@gmail.com', password: '123456')
+    demoUser10 = User.create!(first_name: 'Shannon Sharpe', last_name: 'Wojnarowski', email: 'ShannonSharpe@gmail.com', password: '123456')
+    demoUser11 = User.create!(first_name: 'Kevin Durant', last_name: 'Wojnarowski', email: 'KevinDurant@gmail.com', password: '123456')
+    demoUser12 = User.create!(first_name: 'Jalen Rose', last_name: 'Wojnarowski', email: 'JalenRose@gmail.com', password: '123456')
+    demoUser13 = User.create!(first_name: 'Cari Champion', last_name: 'Wojnarowski', email: 'CariChampion@gmail.com', password: '123456')
+    demoUser14 = User.create!(first_name: 'Colin Cowherd', last_name: 'Wojnarowski', email: 'ColinCowherd@gmail.com', password: '123456')
+    demoUser15 = User.create!(first_name: 'Charles Barkley', last_name: 'Wojnarowski', email: 'CharlesBarkley@gmail.com', password: '123456')
+    demoUser16 = User.create!(first_name: 'Ernie Johnson', last_name: 'Wojnarowski', email: 'ErnieJohnson@gmail.com', password: '123456')
+    demoUser17 = User.create!(first_name: 'Kobe Bryant', last_name: 'Wojnarowski', email: 'KobeBryant@gmail.com', password: '123456')
+    demoUser18 = User.create!(first_name: 'Brad Riely', last_name: 'Wojnarowski', email: 'BradRiely@gmail.com', password: '123456')
+    
     
     test_story_0= Story.create!( title:"What Really Happened During Michael Jordan's Flu Game?",
         
@@ -25,7 +44,7 @@ ActiveRecord::Base.transaction do
      the “Flu Game” still amazes fans as Michael Jordan became the physical embodiment of the phrase “mind over matter.” To look into exactly what he may have dealt with during those legendary 44 minutes, we spoke with Dr. Tyeese Gaines, a practicing emergency 
       medicine physician in New Jersey, to get her professional opinion on exactly what Michael Jordan’s body went through on that infamous day. ",
         
-     author_id: demoUser.id, 
+     author_id: demoUser0.id, 
      
      publish_date: Date.new)
      
@@ -43,7 +62,7 @@ ActiveRecord::Base.transaction do
      limits of human endurance, into the hallowed realm of Willis Reed, MJ, and Isiah Thomas. Willie Beamen was the hero of Any Given Sunday for a reason.If Paul Pierce had to be carted off the floor during the Finals because he didn’t want people to see his stained butt, then I would talk about that every day.
      Like, I would just walk up to strangers and say “Hey, did you know that Paul Pierce shit his pants during the NBA Finals and covered it, brilliantly, by riding off the floor in a wheelchair?”",
             
-       author_id: demoUser.id, 
+       author_id: demoUser1.id, 
 
      publish_date: Date.new)
     
@@ -61,7 +80,7 @@ ActiveRecord::Base.transaction do
      That’s one way of putting it. Another is that the international flavor of the Spurs uniquely equipped them to withstand the rigors of the sauna AT&T Center became. ""Me personally, it didn't bother me,"" Tony Parker said after Game 1. Felt like Europe. 
      We never have AC in Europe, so it didn't bother me at all."" The same shrug about the hot climes was repeated by Manu Ginobili, as if the Spurs brass hadn’t given them the correct lines. “I've played more years in situations like this than with AC on the court,” said the Argentinian. “Not a big deal in that case.”",
 
-        author_id: demoUser.id,
+        author_id: demoUser2.id,
         
         publish_date: Date.new)
              
@@ -79,7 +98,7 @@ ActiveRecord::Base.transaction do
         Plus, if the NBA somehow had known a simple and deserved suspension would lead to the first-ever 3-1 comeback in NBA Finals history, against the only team to ever win 73 regular-season games, spearheaded by the greatest player of his generation for a city in the midst of a 52-year championship drought, in a state 
         that just so happened to be the birthplace of the once-in-a-lifetime player, how can you not be impressed by that total command over the levers of power and influence?",
            
-        author_id: demoUser.id, 
+        author_id: demoUser3.id, 
             
         publish_date: Date.new)
              
@@ -93,7 +112,7 @@ ActiveRecord::Base.transaction do
      We want this to be true because it makes more sense than the other theory floated around by his rivals that MJ was hungover. MJ liked to kick back from time to time with a beverage, but probably not in Park City before a Finals game. It’s also a lot more nefarious a narrative than 
      simple bad luck if it were the flu. No, this means a pizza parlor in Park City, Utah likely figured out who they were delivering the pizza to at that specific hotel, and poisoned the best player in the world.",
          
-     author_id: demoUser.id,
+     author_id: demoUser4.id,
      
      publish_date: Date.new)
          
@@ -106,7 +125,7 @@ ActiveRecord::Base.transaction do
       But we hope the NBA Draft Lottery is rigged like many believe because that just means the NBA is more diabolical and tighter-lipped than the Illuminati, La Cosa Nostra, Druids, Knights Templar, Skull and Bones, and Freemasons could’ve ever imagined. The NBA successfully 
       kept likely hundreds of technical, behind-the-scenes people silent about a massive conspiracy that can add hundreds of millions of dollars to a franchise with the snatch of a ping pong ball.",
          
-        author_id: demoUser.id,
+        author_id: demoUser5.id,
         
         publish_date: Date.new)
 
@@ -119,7 +138,7 @@ ActiveRecord::Base.transaction do
         been in KD’s ear, and that he was actually a trojan horse to curtail Under Armour’s ascendance along with two-time MVP Steph Curry. Under Armour might not make the best kicks, but they had the best pitchman: An empathetic figure at just 6’3” and 180 pounds, Curry was a stand-in for every undersized kid who 
         dreamed of NBA glory.We like this one because rather than place the onus of KD’s decision on his desire to win a ring, it might soothe disgruntled NBA fans to blame the whole thing on the Nike’s attempts to solidify their monopoly over the basketball sneaker market.",
         
-         author_id: demoUser.id, 
+         author_id: demoUser6.id, 
          
          publish_date: Date.new)
         
@@ -137,7 +156,7 @@ ActiveRecord::Base.transaction do
           and the fact Kieff is an inch and a half taller than Marcus with a longer face. Not only that, but Andrew points out that Marcus has a quicker release on his jumper than Kieff. Getting even more real, there might be liability and contractual issues if Marcus had suited up that day. Would they have to re-play the game? What if Washington won? Would it be forfeited? Probably. 
           Plus, there’s no way either would agree to do it, even if we want to believe they’ve done it at least once in the NBA already and have sworn each other to secrecy", 
             
-          author_id: demoUser.id, 
+          author_id: demoUser7.id, 
              
           publish_date: Date.new)
      
@@ -158,10 +177,158 @@ ActiveRecord::Base.transaction do
           The desire of individual owners to win titles conflicts with the “Lakers-Finals-Television Ratings-More Money” theme. Only a few NBA teams have national appeal and a policy favoring them would obviously diminish the chances for all other teams. Owners motivated by winning would never sign on to or tolerate any such policy.In addition, 
           the owners’ individual interests in winning championships have likely contributed to all the major sports leagues adopting policies favoring competitive balance.",
             
-          author_id: demoUser.id, 
+          author_id: demoUser8.id, 
              
           publish_date: Date.new)
+     
+          
+          test_story_9 = Story.create!( title: 'Michael Jordan or LeBron James: Which one is the Greatest of All Time?',
+             
+            body: "It’s tough to top perfection. Or, to be more accurate, the perception of perfection.Michael Jordan won his six rings in six Finals tries, with those two three-peats separated by his first retirement and that brief-but-fascinating minor league baseball career. 
+            They say nobody bats 1.000, but his ability to do just that on the NBA’s greatest stage is the main reason his playoff legacy remains unmatched.Pick a player not named Jordan who’s considered an all-time great, and they had a blemish on their Finals resume. From LeBron James' five Finals losses to Bill Russell (11-1), Kareem Abdul-Jabbar (6-4), Magic Johnson (5-4), Wilt Chamberlain (2-4), Kobe Bryant (5-2), Shaquille O’Neal (4-2), Larry Bird (3-2), and Tim Duncan (5-1), they all fell short at the end at least once. And unlike James, who faltered badly in the 2011 Finals loss against Dallas and was below his Superman standards in 2007 (a sweep by San Antonio) and 2014 (a five-game Spurs win), Jordan met the moment every time while taking down plenty of greats along the way.
+            James admitted he needed to become a more complete player after the 2011 Finals. He did that, using his ability, intelligence and work ethic. James and Jordan are different in many ways but their determination to be the best is a shared trait.James also plays in an era of social media and over-the-top hyper-criticism. Imagine if Jordan played in the social media era. He would’ve been crushed for losing to Boston and Detroit over and over early in his career. Remember, Jordan punched at least two teammates – Steve Kerr and Will Perdue – and harangued Bill Cartwright. If James punched a teammate today, Twitter would break.
+            Also, consider the expectations placed on James as a teen. He was supposed to be the next greatest and not only lived up to those expectations for 17 years but surpassed them. James is the greatest player ever.Or at least one of a select few.",
+            
+            author_id: demoUser9.id, 
+             
+            publish_date: Date.new)
+          
+          
+          test_story_10 = Story.create!( title: 'The Case for Wilt Chamberlain as the Best Ever',
+             
+            body: "With two of the very best active players in LeBron James and Kevin Durant currently playing in the NBA Finals, it is not uncommon to see the age-old debate of who was the best ever come up. There are a handful of names that are always bandied about and impassioned arguments made in favor of each one.
+            Michael Jordan, Bill Russell and Magic Johnson seem to be the most common names to come up. LeBron's name, along with Kobe Bryant's, have begun to be mentioned now and then.
+            But, the best that ever was—and always will be—none other than Wilt Chamberlain.
+            Wilt is also usually in the conversation, but his accomplishments are frequently derided and dismissed as a function of his era, the league he was playing in and the competition he faced. Moreover, there are the accusations of his selfish play inflating his stats and the inevitable argument that he didn't win enough championships.
+            Well, let's see if we can address some of those issues and put it all into context with what the other greats of the game did.",
+            
+             author_id: demoUser10.id, 
+             
+            publish_date: Date.new)
+          
+            
+            
+            test_story_11 = Story.create!( title: 'Russell Westbrook is Officially the Problem in OKC',
+             
+            body: "Russell Westbrook and the Oklahoma City Thunder found themselves on the losing end of another first-round playoff series in the 2019 NBA playoffs. Their series loss against the Portland Trail Blazers was the third straight one-and-done series for OKC.
+             Now, there are a lot of questions as to whether Russell Westbrook can continue to be the franchise’s best player. He might be one of the most underrated players in NBA history, but some wonder if 
+             Oklahoma City should try to move on from the talented former MVP who is a triple-double machine and restart things with Paul George at the helm. With that in mind let’s explore if 
+             Russell Westbrook is the problem with the Oklahoma City Thunder. Since Kevin Durant left for Golden State, Oklahoma City has looked overmatched in each of their playoff series losses. 
+             They lost in five games to the Houston Rockets in 2017, and they followed it 
+             up with a six-game loss to the Utah Jazz last season. This year things were supposed to be different, as the Thunder looked to be a legitimate threat to Golden State in the West.After looking at everything regarding Oklahoma City Thunder superstar Russell Westbrook, we can say that he is a part of the problem for the team, but he isn’t the only one. 
+             A lack of talent at times and iffy coaching decisions don’t help the cause, but Westbrook’s overall decline is a culprit in the recent Thunder woes. Who do you expect to help Oklahoma City turn their playoff misfortune around? ",
+            
+             author_id: demoUser11.id, 
+             
+            publish_date: Date.new)
+            
+            
+            test_story_12 = Story.create!( title: 'Golden State Warriors: Steph Curry is the “system',
+             
+            body: "The Golden State Warriors are currently playing with three All-Stars (including a two-time Finals MVP), boast a 12-4 record that is good for first in the Western Conference, and yet with a 2-2 record in their last four games (inclusive of a 21-point beating by the Houston Rockets) observers agree that this team hasn’t looked like themselves recently.
+            How can that be the case then when this squad is the defending NBA champion, they have the one of the two best players in the league in Kevin Durant, a DPOY caliber player in Draymond Green, and one of the greatest shooters in NBA history in Klay Thompson?
+            Golden State prides itself on the system of basketball they employ, their “strength in numbers” mentality that is founded upon sharing and moving the basketball. Sure, Stephen Curry has been injured but clearly that shouldn’t mean this team becomes totally different?
+            Actually, that is exactly what happens when Steph Curry is taken out of the equation. The Warriors “system” doesn’t work as usual, surrounding players don’t have the same luxury of finding open shots, star players like Durant can’t easily go one-on-one, and opposing defenses suddenly feel they have a chance at halting the juggernaut that is the Warriors.",
+            
+             author_id: demoUser12.id, 
+             
+            publish_date: Date.new)
+            
+            
+            test_story_13 = Story.create!( title: 'Kobe Bryant vs. LeBron James: Is Bryant Better Overall?',
+             
+            body: "Before I start with this topic, I want to make it clear that I do not support any comparison between these two very talented athletes. I believe comparing athletes as finished products.A good example of finished product comparison would be Jordan vs. Magic, Hakeem vs. David Robinson, or even Wilt Chamberlain vs. Kareem Abdul Jabbar.
+            These guys played in the same era and against each other for years with memorable battles in the playoffs and the NBA finals.
+            Kobe and LeBron’s careers are far from over, and they are yet to play in any games that really matter—playoffs or NBA Finals.
+            Though I do not support the comparison, there is certainly a rivalry between those two.
+            Both guys continue to deny any kind of rivalry exists, especially Kobe.  Even if Kobe is not interested in there being any rivalry between he and the young man who would be King, the rest of us are. And that's why there's more info floating around the Web today than any of us have time to go through.
+            This rivalry has led to all this talk about who’s better.I’ve been in Chicago since the beginning of the year and didn’t have any free time to get a haircut; needless to say I was looking like a cave man and had hair growing on my face in areas I didn’t know could grow hair.
+            A friend referred me to this barber shop called A+ Plus Cuts, and I thought to myself.
+            I walked into a very heated debate in the barber shop about Kobe and LeBron and who is better.
+            The main argument was: Who had the most complete game, and who has the better supporting cast?
+            I personally believe that Kobe has the more mature and effective game; very few people in the NBA have had a talent this refreshing, yet entertaining to watch.
+            This helped to preserve his aging knees, and he went on to play 35 minutes or more a night for three more seasons.
+            For now, LeBron is still improving on his game and adding new assets to his portfolio every day. Last year, he added the long-range shot, and so far it seem like his three-point shots are getting better.
+            But for now, his No. 1 asset still remains driving it hard to the basket, over or around an opponent.",
+            
+             author_id: demoUser13.id, 
+             
+            publish_date: Date.new)
 
+            test_story_14 = Story.create!( title: 'The Kawhi Leonard Story: Why is he so quiet?',
+             
+            body: "Charles Barkley thinks Kawhi Leonard is the best player in the world. Coach David Fizdale thinks Leonard is a machine that bleeds antifreeze. Spurs fans will tell you the silent assassin nicknamed the Klaw because of his giant hands would have led San Antonio to the Finals if 
+            it wasn’t for dirty-ass Zaza Pachulia. One thing we all can agree on about the former NBA Finals MVP, who celebrates a birthday (or release date if you believe he is a machine that keeps getting better with each software update) today, 
+            is he doesn’t look like a very emotional guy. He usually looks like a guy who got dunked on after dunking on someone. He often celebrates wins by looking like he lost. His bench celebrations resemble a 12th man not getting any PT when his team is up by 20 in the fourth.
+            Besides the question posted by Nike above, the question a lot of people want to know is, “Why is Kawhi Leonard so quiet?”
+            Here’s Youtuber Swishout with an answer while telling “The (emotional) Kawhi Leonard Story.”harles Barkley thinks Kawhi Leonard is the best player in the world. Coach David Fizdale thinks Leonard is a machine that bleeds antifreeze. Spurs fans will tell you the silent assassin nicknamed the Klaw because of his giant hands would have led San Antonio to the Finals if it wasn’t for dirty-ass Zaza Pachulia. One thing we all can agree on about the former NBA Finals MVP, who celebrates a birthday (or release date if you believe he is a machine that keeps getting better with each software update) today, is he doesn’t look like a very emotional guy. He usually looks like a guy who got dunked on after dunking on someone. He often celebrates wins by looking like he lost. His bench celebrations resemble a 12th man not getting any PT when his team is up by 20 in the fourth.
+            Besides the question posted by Nike above, the question a lot of people want to know is, “Why is Kawhi Leonard so quiet?”
+            Here’s Youtuber Swishout with an answer while telling “The (emotional) Kawhi Leonard Story.”",
+            
+             author_id: demoUser14.id, 
+             
+            publish_date: Date.new)
+
+            
+            test_story_15 = Story.create!( title: 'The truth behind the end of the Kobe-Shaq Era',
+             
+            body: "
+            One of the most dominant duos in NBA history, Kobe Bryant and Shaquille O’Neal, ruled the league like royalty at the turn of the century. Yet, what could have been a complete domination of 
+            the decade by the Los Angeles Lakers turned into arguably the biggest divorce in the league’s modern era. 
+            A dynastic reign was cut short because of a long-running feud that could be resolved only by separating the two most valuable players in the Lakers’ lineup.According to many reports, the Kobe-Shaq era ended because two big egos couldn’t be contained on one roster without the team imploding. 
+            In the 2004 NBA Finals, with the team bolstered by the addition of Gary Payton and Karl Malone, two all-time greats who were at the tail end of their careers, 
+            the Lakers lost to the Detroit Pistons. Not to take anything away from coach Larry Brown’s defense-minded team, but a lack of cohesion and the injury that sidelined Malone in Game 3 took down the more talented Lakers as much as the Pistons’ own talents, their grit, and their determination.",
+            
+             author_id: demoUser15.id, 
+             
+            publish_date: Date.new)
+            
+            
+            test_story_16 = Story.create!( title: 'Why the Spurs are always so good',
+             
+            body: "
+            No one should be mystified that the Spurs are doing this, and not just because the Nuggets have very little collective playoff experience beyond Paul Millsap. The Spurs often do this! Here’s why, in my humble opinion: they always know what they are supposed to be doing, and the Spurs’ system on both ends is always designed to support the players’ strengths.
+            On the latter, for instance: in a league gone mad with three-pointers, the Spurs have few knockout three-point shooters (four of them, none of them top-three options on the team). As a result of playing to their strengths, San Antonio had the lowest three-point rate in the league. They still had the No. 7 offense in the NBA this season, though. 
+            The offense was based around ball protection and getting good shots wherever you find them. DeMar DeRozan and LaMarcus Aldridge shot quite efficiently on twos (DeRozan at 49 percent, Aldridge at 53 percent), Rudy Gay had his most efficient and lowest usage season ever as the third banana, and the others who mixed in focused on taking good shots and moving the ball without giving up turnovers. It worked! On Thursday, the Spurs had seven turnovers and shot 20-29 in the mid-range.
+            Meanwhile, the game plan every night is perfectly clear to everyone in a Spurs uniform. They know who they are and who they are not. Some of them are still learning the finer points of defensive philosophy, and it’s not the quickest or longest bunch, which has led to some problems on that end this series and season.
+            Both of these things come back down to this, the sole constants in the franchise over the past two and a half decades: the roster always makes sense, and the coaching is impeccable. When the roster has All-NBA-caliber players, the Spurs will be a title contender. When the roster has a fringe all-star or two, the Spurs will be competitive in the playoffs. It’s clockwork, and it should be celebrated.
+            All hail the Spurs, the anti-trend, ultra well-managed NBA team that will apparently never go away.
+            ",
+            
+             author_id: demoUser16.id, 
+             
+            publish_date: Date.new)
+            
+            
+            test_story_17 = Story.create!( title: 'Everybody (Still) Hates Dwight',
+             
+            body: "
+            Dwight Howard is just one team away from completing the dangerous and powerful Southeast Division Infinity Gauntlet. Now a member of the Washington Wizards, he’s set to play for his sixth franchise in eight seasons.
+            It’s not solely the quote that’s cringeworthy. If another NBA player, like Nick Young, would’ve said this, it might have come across as a humor-adjacent riff on a complicated career. 
+            The most noteworthy part would have been the implication that a player was “stung” by his former team. But these words were said by Dwight Howard.
+            Howard has a history of responding to every situation with a corny joke. It doesn’t matter whether he’s asked about a poor performance, team turmoil, or jilted fans; he’ll crack a smile and hit an unamused audience with C-grade open-mic material.",
+            
+             author_id: demoUser17.id, 
+             
+            publish_date: Date.new)
+
+             
+         
+            test_story_18 = Story.create!( title: 'John Wall Contract Worst in NBA History',
+             
+            body: "
+            With the news that John Wall is out long term ​after rupturing his Achilles in a freak accident, the Wizards are forced to deal with the repercussions of a ​contract which was questioned at the time, but now appears truly hopeless.
+            Wall signed a max extension two summers ago, in a deal which is expected to pay him $170 million over the next four years. Given the fact that Wall is unlikely to play in the next full calendar year, this is the worst contract in the NBA and it isn't even close.
+            For Wall, the money isn't much of a consolation prize, as the former All-Star would much rather be on the court building upon his legacy in the DC metro area. Instead, he leaves the Wizards with little cap flexibility and the rotting corpse of a basketball team.
+            ",
+            
+             author_id: demoUser18.id, 
+             
+            publish_date: Date.new)
+
+            
+
+          
           file_0 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/mj-flu.jpg')
           test_story_0.photo.attach(io: file_0, filename: 'mj-flu.jpg')
           
@@ -188,6 +355,37 @@ ActiveRecord::Base.transaction do
           
           file_8 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/laker-rig.jpg')
           test_story_8.photo.attach(io: file_8, filename: 'laker-rig.jpg')
+          
+          file_9 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/mj-bron.jpg')
+          test_story_9.photo.attach(io: file_9, filename: 'mj-bron.jpg')
+          
+          file_10 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/laker-rig.jpg')
+          test_story_10.photo.attach(io: file_10, filename: 'wilt.jpg')
+          
+          file_11 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/russ.jpeg')
+          test_story_11.photo.attach(io: file_11, filename: 'russ.jpg')
+         
+          file_12 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/laker-rig.jpg')
+          test_story_12.photo.attach(io: file_12, filename: 'steph.jpg')
+          
+          file_13 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/kobe-bron.jpg')
+          test_story_13.photo.attach(io: file_13, filename: 'kobe-bron.jpg')
+          
+          file_14 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/kawhi.jpg')
+          test_story_14.photo.attach(io: file_14, filename: 'kawhi.jpg')
+          
+          file_15 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/shaq-kobe.jpeg')
+          test_story_15.photo.attach(io: file_15, filename: 'shaq-kobe.jpg')
+          
+          file_16 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/spurs.jpeg')
+          test_story_16.photo.attach(io: file_16, filename: 'spurs.jpg')
+          
+          file_17 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/dwight.jpg')
+          test_story_17.photo.attach(io: file_17, filename: 'dwight.jpg')
+          
+          file_18 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/wall.jpg')
+          test_story_18.photo.attach(io: file_18, filename: 'wall.jpg')
+          
           
 end
 

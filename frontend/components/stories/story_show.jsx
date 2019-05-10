@@ -21,7 +21,7 @@ class StoryShow extends React.Component{
             <div className='show-container'>
                 <h1 className='show-title'>{story.title}</h1>
                 <div className ='show-author'>
-                    Kevin Durant
+                   {story.first_name}
                 </div>
                <div className='show-pic-container'>
                     <img className='show-pic' src={story.photoUrl ? story.photoUrl : ""} />
@@ -35,3 +35,4 @@ class StoryShow extends React.Component{
 }
 
 export default StoryShow; 
+

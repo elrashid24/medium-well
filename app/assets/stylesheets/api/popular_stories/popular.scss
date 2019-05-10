@@ -1,8 +1,12 @@
+.bottom-container{
+    display: flex; 
+    justify-content: space-between;
+}
+
 .popular-stories-container{
-    width: 30%;
-     margin-left:800px;
      font-family:  'medium-content-sans-serif-font';
      padding:50px; 
+     width: 30%;
 }
 
 .popular-title{
