@@ -26,7 +26,6 @@ class StoryIndex extends React.Component {
                 </div>
            </div>
         )
-
     }
 }
 export default StoryIndex 
