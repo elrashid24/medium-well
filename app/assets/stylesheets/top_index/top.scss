@@ -15,13 +15,13 @@
     height: 28%;
     margin-bottom: 30px;
     color: black;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
      
 }
 
 .top-left{
     width: 38%; 
-     
+
 }
 
 .top-middle-container{
@@ -55,7 +55,6 @@
   flex-direction: column;
   justify-content: space-between;
   margin-left: 20px;
-  letter-spacing: 0.2px;
 }
 
 .top-middle-pic{
@@ -78,10 +77,12 @@
 .top-left-story{
     margin-left: 18px;
     vertical-align: column;
+    width: 40%;
+    
      
 }
 
-.top-left-title, .top-middle-title, .top-right-title, .top-{
+.top-left-title, .top-middle-title, .top-right-title, {
       margin-top: 0;
     font-size: 18px;
     font-weight: 600;
@@ -108,4 +109,5 @@
 a{
 text-decoration: none;
 color: black;
+letter-spacing: 0.2px;
 }

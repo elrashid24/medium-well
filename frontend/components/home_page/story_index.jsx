@@ -13,13 +13,16 @@ class StoryIndex extends React.Component {
         if (this.props.stories.length === 0) return null;
         const stories = this.props.stories; 
         let topSection = <TopFeed stories= {stories.slice(0,5)} />
-        let popularSection = <PopularStories stories ={stories.slice(3,8)}/>
+        let popularSection = <PopularStories stories ={stories.slice(5)}/>
         let suggestedStories = <SuggestedStories stories={stories.slice(8)}/> 
         return(
            <div className='home-container' >
             {topSection} 
             <div className ='bottom-container'>
             {popularSection}
+            <div className = 'bottom-right'>
+            {suggestedStories}
+            </div>
             </div>
            </div>
         )
