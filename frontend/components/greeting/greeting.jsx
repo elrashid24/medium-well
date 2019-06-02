@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {openModal} from '../../actions/modal_actions'
+import {createStory} from '../../util/story_actions';
 
 
 
@@ -14,11 +15,13 @@ const Greeting = ({ currentUser, logout, openModal }) => {
             &nbsp;&nbsp;
             <button className="signup-b" onClick={() => openModal('signup')}>Get started!</button>
             &nbsp;&nbsp;
+
         </nav>
     );
     const personalGreeting = () => (
-            <nav className='nav-buttons'>
+        <nav className='nav-buttons'>
                 <button className="logout-button" onClick={logout}>Log Out</button>
+            <Link to="/stories/new">Write a Story</Link>
             </nav>
     );
 
@@ -30,3 +33,4 @@ export default Greeting;
 
 
 //adds logout button within nav bar 
+

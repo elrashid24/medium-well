@@ -20,9 +20,9 @@ class StoryIndex extends React.Component {
             {topSection} 
             <div className ='bottom-container'>
             {popularSection}
-            <div className = 'bottom-right'>
+            {/* <div className = 'bottom-right'>
             {suggestedStories}
-            </div>
+            </div> */}
             </div>
            </div>
         )

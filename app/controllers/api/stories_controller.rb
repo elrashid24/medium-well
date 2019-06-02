@@ -9,7 +9,7 @@ class Api::StoriesController < ApplicationController
 
     def create
         @story = Story.new(story_params)
-        @story.author_id = current_user.id 
+        @story.author_id = 5 
         @story.publish_date = Date.new
         
         if @story.save

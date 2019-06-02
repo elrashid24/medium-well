@@ -12,6 +12,8 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import Modal from '../modal/modal';
 import StoryIndexContainer from './home_page/story_index_container';
 import StoryShowContainer from './stories/story_show_container';
+import StoryCreateContainer from './stories/new_story_container';
+import Header from './header';
 
 const App = () => (
     <div>
@@ -20,9 +22,11 @@ const App = () => (
                 <Link to ='/' className='logo'><h1>Medium Well</h1></Link>
             </nav>
         </div>
-        <Modal />
+        {/* <Header/> */}
+        <Modal/>
         <GreetingContainer/>
         <Switch>
+            <ProtectedRoute exact path='/stories/new' component={StoryCreateContainer} />
             <Route exact path = '/story/:id' component = {StoryShowContainer}/>
             <Route path = '/' component = {StoryIndexContainer}/>
         </Switch>
