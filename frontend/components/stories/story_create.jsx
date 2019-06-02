@@ -1,65 +1,63 @@
-import React from 'react';
-import {Link, withRouter, Redirect} from 'react-router-dom';
+import React from "react";
+import { Link, withRouter, Redirect } from "react-router-dom";
+import { createStory } from "../../util/story_api_util";
 
 class StoryCreate extends React.Component {
-   
-    constructor(props){
-        super(props);
-        // this.state = this.props.story; 
-        this.state = this.props.story;
-        this.update = this.update.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: "",
+      body: "",
+      error: null
+    };
+    this.handleOnChange = this.handleOnChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    update(field){
-        return(e) => this.setState({
-            [field] : e.target.value
-        })
-    }
+  handleOnChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
 
-    handleSubmit(e) {
-        const story = this.state; 
-        this.props.createStory({story})
-    }
+  handleSubmit(e) {
+    e.preventDefault();
+    const story = {
+      title: this.state.title,
+      body: this.state.body
+    };
+    createStory(story).then(
+      response => console.log("this worked!", response),
+      err => this.setState({ error: err })
+    );
+  }
 
-
-
-    handleSubmit(e) {
-        this.props.createStory({story})
-
-    }
-
-
-
-
-    renderErros(errors){
-        return (
-            <div className ='story-errors'>
-                {errors}
-            </div>
-        )
-    }
-
-    render(){
-        <div 
-        className ='create'>
-            <input 
-            className ='new-story-title'
-            type="text" 
-            value = {this.state.title}
-            onChange ={this.update(title)}
-            placeholder = "Title"
-            />
-            <br/>
-            <input 
+  render() {
+    return (
+      <div className="create">
+        <form onSubmit={this.handleSubmit}>
+          <input
+            name="title"
+            className="new-story-title"
             type="text"
-            className ='new-story-body'
-            value = {this.state.body}
-            onChange={this.update(body)}
-            placeholder = 'Your Story Here.'
-            />
-        </div>
-        } 
+            value={this.state.title}
+            onChange={this.handleOnChange}
+            placeholder="Title"
+          />
+          <br />
+          <input
+            name="body"
+            type="text"
+            className="new-story-body"
+            value={this.state.body}
+            onChange={this.handleOnChange}
+            placeholder="Your Story Here."
+          />
+          <button type="submit">Publish</button>
+        </form>
+      </div>
+    );
+  }
 }
 
-export default withRouter(StoryCreate); 
+export default withRouter(StoryCreate);
