@@ -116,11 +116,6 @@ class SessionForm extends React.Component {
               />
             </div>
           </form>
-          <div>
-            <button className="demo-button" onClick={this.handleDemo}>
-              Demo
-            </button>
-          </div>
 
           <div className="opposite-modal">{this.props.otherForm}</div>
         </div>
@@ -163,6 +158,11 @@ class SessionForm extends React.Component {
           </form>
           <div className="opposite-modal">
             No account? {this.props.otherForm}
+          </div>
+          <div>
+            <button className="demo-button" onClick={this.handleDemo}>
+              Demo
+            </button>
           </div>
         </div>
       );
