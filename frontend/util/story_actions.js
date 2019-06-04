@@ -4,12 +4,12 @@ export const RECEIVE_ALL_STORIES = "RECEIVE_ALL_STORIES";
 export const RECEIVE_STORY = "RECEIVE_STORY";
 export const REMOVE_STORY = "REMOVE_STORY";
 
-const receiveAllStories = stories => ({
+export const receiveAllStories = stories => ({
   type: RECEIVE_ALL_STORIES,
   stories: stories
 });
 
-const receiveStory = story => {
+export const receiveStory = story => {
   // debugger
   return {
     story: story,
@@ -17,7 +17,7 @@ const receiveStory = story => {
   };
 };
 
-const removeStory = story => ({
+export const removeStory = story => ({
   type: REMOVE_STORY,
   storyId: story.id
 });

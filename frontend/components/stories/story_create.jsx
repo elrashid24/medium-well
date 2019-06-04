@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, withRouter, Redirect } from "react-router-dom";
 import { createStory } from "../../util/story_api_util";
-
+import { connect } from "react-redux";
+import { receiveStory } from "../../util/story_actions";
 class StoryCreate extends React.Component {
   constructor(props) {
     super(props);
@@ -22,14 +23,25 @@ class StoryCreate extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    const { receiveStory, history } = this.props;
     const story = {
       title: this.state.title,
       body: this.state.body
     };
-    createStory(story).then(
-      response => console.log("this worked!", response),
-      err => this.setState({ error: err })
-    );
+    if (story.title !== "" && story.body !== "") {
+      try {
+        createStory(story)
+          .then(newlyCreatedStory => {
+            receiveStory(newlyCreatedStory);
+            return newlyCreatedStory;
+          })
+          .then(newlyCreatedStory => {
+            history.push(`/story/${newlyCreatedStory.id}`);
+          });
+      } catch (error) {
+        this.setState({ error: error });
+      }
+    }
   }
 
   render() {
@@ -60,4 +72,11 @@ class StoryCreate extends React.Component {
   }
 }
 
-export default withRouter(StoryCreate);
+const mapDispatchToProps = dispatch => ({
+  receiveStory: id => dispatch(receiveStory(id))
+});
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(StoryCreate);

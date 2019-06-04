@@ -1,15 +1,20 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import StoryShow from './story_show'
-import {fetchStory} from '../../util/story_actions';
+import React from "react";
+import { connect } from "react-redux";
+import StoryShow from "./story_show";
+import { fetchStory } from "../../util/story_actions";
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state, ownProps) => {
+  return {
     story: state.entities.stories[ownProps.match.params.id],
-    currentUser: state.session.currentUser
-})
+    currentUserId: state.session.id
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
-    fetchStory: (id) => dispatch(fetchStory(id))
+  fetchStory: id => dispatch(fetchStory(id))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(StoryShow);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(StoryShow);

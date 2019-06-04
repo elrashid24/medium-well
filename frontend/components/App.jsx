@@ -14,6 +14,7 @@ import StoryIndexContainer from './home_page/story_index_container';
 import StoryShowContainer from './stories/story_show_container';
 import StoryCreate from './stories/story_create';
 import Header from './header';
+import UserShowContainer from './stories/user_stories_container'
 
 const App = () => (
     <div>
@@ -27,6 +28,7 @@ const App = () => (
         <GreetingContainer/>
         <Switch>
             <ProtectedRoute exact path='/stories/new' component={StoryCreate} />
+            <ProtectedRoute exact path='/stories/mine' component={UserShowContainer} />
             <Route exact path = '/story/:id' component = {StoryShowContainer}/>
             <Route path = '/' component = {StoryIndexContainer}/>
         </Switch>
