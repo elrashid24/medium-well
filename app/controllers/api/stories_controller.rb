@@ -39,7 +39,7 @@ class Api::StoriesController < ApplicationController
     def destroy 
         @story = Story.find_by(id: params[:id])
         @story.destroy 
-        render 'api/stories/index'
+        
     end
 
 

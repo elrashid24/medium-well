@@ -17,9 +17,9 @@ export const receiveStory = story => {
   };
 };
 
-export const removeStory = story => ({
+export const removeStory =id => ({
   type: REMOVE_STORY,
-  storyId: story.id
+  storyId: id
 });
 
 export const fetchStories = () => dispatch =>
