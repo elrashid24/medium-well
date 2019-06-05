@@ -12,6 +12,7 @@ import Header from "./header";
 import UserShowContainer from "./stories/user_stories_container";
 import { connect } from "react-redux";
 import { fetchStories } from "../util/story_actions";
+import StoryEdit from "./stories/story_edit";
 
 class App extends React.Component {
   componentDidMount() {
@@ -36,6 +37,11 @@ class App extends React.Component {
             exact
             path="/stories/mine"
             component={UserShowContainer}
+          />
+          <ProtectedRoute
+            exact
+            path="/stories/:storyId/edit"
+            component={StoryEdit}
           />
           <Route exact path="/story/:id" component={StoryShowContainer} />
           <Route path="/" component={StoryIndexContainer} />

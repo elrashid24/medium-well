@@ -14,6 +14,7 @@ class Api::StoriesController < ApplicationController
         
         if @story.save
             render 'api/stories/show'
+            # render json: @story
         else 
              render json: @user.errors.full_messages, status: 422
         end
@@ -28,8 +29,7 @@ class Api::StoriesController < ApplicationController
 
     def update
         @story = Story.find_by(id: params[:id])
-
-        if @Story.update_attributes(story_params)
+        if @story.update_attributes(story_params)
             render 'api/stories/show'
         else 
             render json: @user.errors.full_messages, status: 422

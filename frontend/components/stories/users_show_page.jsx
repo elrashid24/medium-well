@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { deleteStory } from "../../util/story_api_util";
+import { updateStory } from "../../util/story_api_util";
 import { removeStory } from "../../util/story_actions";
+import { receiveStory } from "../../util/story_actions";
 import { connect } from "react-redux";
 
 class UserShow extends React.Component {
@@ -24,6 +26,13 @@ class UserShow extends React.Component {
               >
                 Delete Story
               </button>
+              <button
+                onClick={() => {
+                  this.props.history.push(`/stories/${story.id}/edit`);
+                }}
+              >
+                Edit Story
+              </button>
             </li>
           ))}
         </ul>
@@ -33,7 +42,8 @@ class UserShow extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  removeStory: id => dispatch(removeStory(id))
+  removeStory: id => dispatch(removeStory(id)),
+  receiveStory: story => dispatch(receiveStory(story))
 });
 export default connect(
   null,
