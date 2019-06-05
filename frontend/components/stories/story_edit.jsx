@@ -5,15 +5,14 @@ import { connect } from "react-redux";
 class StoryEdit extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { title: "", body: "" };
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   componentDidMount() {
     const storyId = this.props.match.params.storyId;
-    // console.log(storyId);
-    // this.myStory = fetchStory(storyId).then(story => console.log(story));
-    return fetchStory(storyId).then(story => this.setState({ story }));
+
+    return fetchStory(storyId).then(story => this.setState(story));
   }
   handleOnChange(e) {
     this.setState({
@@ -24,25 +23,25 @@ class StoryEdit extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const story = this.state;
-    if (story.title !== "" && story.body !== "") {
-      updateStory(story)
-        .then(updatedStory => {
-          receiveStory(updatedStory);
-          return updatedStory;
-        })
-        .then(updatedStory => {
-          history.push(`/story/${updatedStory.id}`);
-        });
-    }
+    updateStory(story)
+      .then(updatedStory => {
+        receiveStory(updatedStory);
+
+        return updatedStory;
+      })
+      .then(updatedStory => {
+        this.props.history.push(`/story/${updatedStory.id}`);
+      });
   }
   render() {
     console.log(this.state);
+
     return (
       <div className="edit">
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input
-            onSubmit={this.handleSubmit}
-            type="title"
+            name="title"
+            type="text"
             className="new-story-title"
             type="text"
             value={this.state.title}
@@ -50,6 +49,7 @@ class StoryEdit extends React.Component {
           />
           <br />
           <input
+            name="body"
             type="text"
             className="edit-story-body"
             value={this.state.body}
