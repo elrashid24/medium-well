@@ -27,11 +27,6 @@ const Greeting = ({ currentUser, logout, openModal }) => {
       <span className="avi-container">
         <Link to="/stories/mine" className="avi" />
       </span>
-      {
-        <Link to="/stories/new" className="new-story-button">
-          Write A story
-        </Link>
-      }
     </nav>
   );
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { DEFAULT_IMAGE } from "../../constants";
 
 const PopularStories = ({ stories }) => {
   return (
@@ -14,18 +15,12 @@ const PopularStories = ({ stories }) => {
 const PopularStoryItem = ({ story }) => {
   return (
     <Link to={`/story/${story.id}`}>
-      <div className="popular-story">
-        <div className="popular-body">
-          <span className="popular-title">{story.title}</span>
-          <p className="popular-preview">{story.body.slice(0, 120)}...</p>
-          <span className="popular-author">Author: Stephen A. Smith</span>
-        </div>
-        <div className="popular-preview">
-          {story.photoUrl && (
-            <img className="popular-pic" src={story.photoUrl} />
-          )}
-        </div>
+      <div className="bottom-left-story">
+        <span className="bottom-left-title">{story.title}</span>
+        <p className="bottom-left-preview">{story.body.slice(0, 120)}...</p>
+        <span className="bottom-left-author">Author: Stephen A. Smith</span>
       </div>
+      <img className="bottom-left-pic" src={story.photoUrl || DEFAULT_IMAGE} />
     </Link>
   );
 };

@@ -23,15 +23,14 @@ class StoryEdit extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const story = this.state;
-    updateStory(story)
-      .then(updatedStory => {
-        receiveStory(updatedStory);
-
-        return updatedStory;
-      })
-      .then(updatedStory => {
-        this.props.history.push(`/story/${updatedStory.id}`);
-      });
+    updateStory(story).then(
+      data => {
+        history.push(`/story/${data.id}`);
+      },
+      () => {
+        this.setState({ error: "Title and Body can't be blank." });
+      }
+    );
   }
   render() {
     console.log(this.state);
@@ -56,6 +55,10 @@ class StoryEdit extends React.Component {
             onChange={this.handleOnChange}
           />
           <button type="submit">Update</button>
+          <br />
+          {this.state.error && (
+            <span style={{ color: "red" }}>{this.state.error}</span>
+          )}
         </form>
       </div>
     );

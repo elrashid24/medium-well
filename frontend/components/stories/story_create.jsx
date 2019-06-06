@@ -34,7 +34,7 @@ class StoryCreate extends React.Component {
         history.push(`/story/${data.id}`);
       },
       () => {
-        this.setState({ error: "Oops! Something went wrong." });
+        this.setState({ error: "Title and Body can't be blank." });
       }
     );
   }

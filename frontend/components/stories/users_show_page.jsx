@@ -10,13 +10,16 @@ import { DEFAULT_IMAGE } from "../../constants";
 class UserShow extends React.Component {
   render() {
     return (
-      <div className="story-show-container">
-        <h1>My Stories</h1>
+      <div className="show-container">
+        <h1 className="user-show-">My Stories</h1>
         <ul>
           {this.props.stories.map(story => (
             <li key={story.id}>
               <Link to={`/story/${story.id}`}>
                 <span className="show-title">{story.title}</span>
+                <Link to="/stories/new" className="new-story-button">
+                  Write A story
+                </Link>
               </Link>
               <div className="show-pic-container">
                 <img

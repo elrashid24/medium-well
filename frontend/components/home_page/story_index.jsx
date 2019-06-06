@@ -8,11 +8,20 @@ class StoryIndex extends React.Component {
     const { stories } = this.props;
     if (stories.length === 0) return null;
     return (
-      <div className="home-container">
-        <TopFeed stories={stories.slice(0, 5)} />;
-        <div className="bottom-container">
-          <PopularStories stories={stories.slice(5)} />;
-          {/* <SuggestedStories stories={stories.slice(8)} />; */}
+      <div className="main">
+        <div className="home-container">
+          <div className="top-container">
+            <TopFeed stories={stories.slice(0, 5)} />;
+          </div>
+          <div className="bottom-container">
+            <div className="bottom-left-container">
+              <div className="bottom-left-items">
+                <PopularStories stories={stories.slice(5)} />;
+              </div>
+            </div>
+            <div className="bottom-right-container" />
+            <SuggestedStories stories={stories.slice(8)} />;
+          </div>
         </div>
       </div>
     );

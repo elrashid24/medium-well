@@ -9,27 +9,31 @@
   justify-content: space-between;
   width: 90%;
   padding: 35px;
-  height: 28%;
+  height: 10%;
   margin-bottom: 30px;
+  margin-top: 0px;
   color: black;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0.2, 0.2, 0.2, 0.2);
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .top-left {
   width: 38%;
-  padding-left: 25px;
+  padding-left: 45px;
 }
 
 .top-middle-container {
   width: 30%;
   // height: 28%
-  padding-left: 5px;
+  margin-right: 0px;
 }
 
 .top-middle {
   display: flex;
-  margin-bottom: 5px;
-  margin-right: 20px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .top-right {
@@ -38,7 +42,7 @@
 }
 
 .top-left-pic {
-  height: 170px;
+  height: 120px;
   object-fit: cover;
   margin-bottom: 14px;
   overflow: hidden;
@@ -50,16 +54,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 10px;
+  width: 60%;
 }
 
 .top-middle-pic {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 110px;
   object-fit: cover;
   margin-right: 24px;
-  margin-top: 2px;
+  // margin-top: px;
   overflow: hidden;
+  margin-bottom: 2px;
 }
 
 .top-right-pic {
@@ -112,6 +118,9 @@
   margin-bottom: 2px;
   padding-left: 5px;
   padding-right: 5px;
+  height: 50px;
+  // width: 200px;
+  // background-image: url(https://cdn-images-1.medium.com/max/900/1*Cs2lqW1GyoPdYqs1U0Xudg.png);
 }
 .avi {
   width: 200px;
@@ -121,6 +130,34 @@
   margin-bottom: 2px;
   padding-left: 5px;
   padding-right: 5px;
+
+  .home-container {
+    height: 30%;
+  }
+
+  .top-container {
+    height: 30%;
+  }
+  .top-right-story {
+    position: absolute;
+    padding-left: 50%;
+    width: 20%;
+  }
+
+  // background-image: url(https://cdn-images-1.medium.com/max/900/1*Cs2lqW1GyoPdYqs1U0Xudg.png);
+  // display: inline-block;
+  // padding-left: 5px;
+  // padding-right: 5px;
+  // width: 50px;
+  // height: 50px;
+  // line-height: 50px;
+  // text-align: center;
+  // white-space: nowrap;
+  // vertical-align: baseline;
+  // background-color: red;
+  // border-radius: 50%;
+  // position: relative;
+  // margin-botton: 2p
 }
 
 // .middle-body{

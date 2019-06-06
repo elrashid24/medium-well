@@ -95,15 +95,17 @@ const TopFeed = ({ stories }) => {
         </Link>
 
         <div className="top-right-story">
-          <Link to={`/story/${stories[4].id}`}>
-            <h1 className="top-right-title">{stories[4].title}</h1>
-            <h2 className="top-right-preview">
-              {stories[4].body.slice(0, 110)}...
-            </h2>
-          </Link>
-          <p className="top-right-author">
-            <Link to={`/story/${stories[4].id}`}>Whoever</Link>
-          </p>
+          <div className="top-right-body">
+            <Link to={`/story/${stories[4].id}`}>
+              <h1 className="top-right-title">{stories[4].title}</h1>
+              <h2 className="top-right-preview">
+                {stories[4].body.slice(0, 110)}...
+              </h2>
+            </Link>
+            <p className="top-right-author">
+              <Link to={`/story/${stories[4].id}`}>Whoever</Link>
+            </p>
+          </div>
         </div>
       </div>
     </div>
