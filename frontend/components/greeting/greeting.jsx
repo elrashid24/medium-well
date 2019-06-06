@@ -24,8 +24,14 @@ const Greeting = ({ currentUser, logout, openModal }) => {
       <button className="logout-button" onClick={logout}>
         Log Out
       </button>
-      <Link to="/stories/new">Write a Story</Link>
-      <Link to="/stories/mine">My Stories</Link>
+      <span className="avi-container">
+        <Link to="/stories/mine" className="avi" />
+      </span>
+      {
+        <Link to="/stories/new" className="new-story-button">
+          Write A story
+        </Link>
+      }
     </nav>
   );
 

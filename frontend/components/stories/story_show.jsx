@@ -20,7 +20,7 @@ class StoryShow extends React.Component {
         <div className="show-pic-container">
           <img
             className="show-pic"
-            src={story.photoUrl ? story.photoUrl : ""}
+            src={story.photoUrl ? story.photoUrl : "../mark_henry.jpg"}
           />
         </div>
         <div className="show-body">{story.body}</div>

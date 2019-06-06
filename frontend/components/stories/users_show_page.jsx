@@ -5,18 +5,25 @@ import { updateStory } from "../../util/story_api_util";
 import { removeStory } from "../../util/story_actions";
 import { receiveStory } from "../../util/story_actions";
 import { connect } from "react-redux";
+import { DEFAULT_IMAGE } from "../../constants";
 
 class UserShow extends React.Component {
   render() {
     return (
-      <div>
+      <div className="story-show-container">
         <h1>My Stories</h1>
         <ul>
           {this.props.stories.map(story => (
             <li key={story.id}>
               <Link to={`/story/${story.id}`}>
-                <span>{story.title}</span>
+                <span className="show-title">{story.title}</span>
               </Link>
+              <div className="show-pic-container">
+                <img
+                  className="show-pic"
+                  src={story.photoUrl || DEFAULT_IMAGE}
+                />
+              </div>
               <button
                 onClick={() =>
                   deleteStory(story.id).then(() => {
