@@ -9,11 +9,12 @@ class Api::StoriesController < ApplicationController
 
     def create
         @story = Story.new(story_params)
-        @story.author_id = current_user.id 
+        @story.author_id = current_user.id
         @story.publish_date = Date.new
         
         if @story.save
             render 'api/stories/show'
+            # render json: @story
         else 
              render json: @user.errors.full_messages, status: 422
         end
@@ -28,8 +29,7 @@ class Api::StoriesController < ApplicationController
 
     def update
         @story = Story.find_by(id: params[:id])
-
-        if @Story.update_attributes(story_params)
+        if @story.update_attributes(story_params)
             render 'api/stories/show'
         else 
             render json: @user.errors.full_messages, status: 422
@@ -39,7 +39,7 @@ class Api::StoriesController < ApplicationController
     def destroy 
         @story = Story.find_by(id: params[:id])
         @story.destroy 
-        render 'api/stories/index'
+        
     end
 
 

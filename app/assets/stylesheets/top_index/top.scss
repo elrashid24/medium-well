@@ -21,13 +21,13 @@
 
 .top-left{
     width: 38%; 
-
+    padding-left: 25px;
 }
 
 .top-middle-container{
     width: 30%;
     // height: 28%
-     
+     padding-left: 5px;
 
 }
 
@@ -75,19 +75,27 @@
 }
 
 .top-left-story{
-    margin-left: 18px;
-    vertical-align: column;
-    width: 40%;
+    margin-left: 36px;
+    // vertical-align: column;
+    width: 70%;
+    
     
      
 }
 
-.top-left-title, .top-middle-title, .top-right-title, {
+ .top-middle-title, .top-right-title, {
       margin-top: 0;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: px;
+    font-size: 16px;
+    font-weight: bold;
+    // text-decoration: bold;
+    // margin-bottom: px;
     
+}
+
+.top-left-title{
+     margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .top-left-preview, .top-middle-preview, .top-right-preview{
@@ -105,6 +113,9 @@
 
 }
 
+// .middle-body{
+//     width: 70%;
+// }
 
 a{
 text-decoration: none;
