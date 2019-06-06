@@ -5,6 +5,7 @@ const mapStateToProps = state => {
   const userStories = Object.values(state.entities.stories).filter(
     story => story.author_id === state.session.id
   );
+
   return { stories: userStories };
 };
 

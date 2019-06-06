@@ -6,12 +6,15 @@
 #  author_id    :integer          not null
 #  title        :string           not null
 #  body         :string           not null
-#  publish_date :string           not null
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
+#  img_url      :string
+#  publish_date :string
 #
 
 class Story < ApplicationRecord
+    validates :author_id, :title, :body, :publish_date, presence: true
+    
     belongs_to :user, 
     primary_key: :id, 
     foreign_key: :author_id, 

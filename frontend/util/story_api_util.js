@@ -1,3 +1,5 @@
+import { useNativePromise } from "./useNativePromise";
+
 export const fetchStories = () =>
   $.ajax({
     method: "GET",
@@ -13,25 +15,22 @@ export const fetchStory = id => {
 };
 
 export const createStory = story =>
-  $.ajax({
-    url: "api/stories",
-    method: "POST",
-    data: { story }
-  });
+  useNativePromise(
+    $.ajax({
+      url: "api/stories",
+      method: "POST",
+      data: { story }
+    })
+  );
 
 export const updateStory = story =>
-  $.ajax({
-    url: `api/stories/${story.id}`,
-    method: "PATCH",
-    data: { story }
-  });
-
-const data = {
-  story: {
-    title: "title",
-    author_id: 123
-  }
-};
+  useNativePromise(
+    $.ajax({
+      url: `api/stories/${story.id}`,
+      method: "PATCH",
+      data: { story }
+    })
+  );
 
 export const deleteStory = id =>
   $.ajax({

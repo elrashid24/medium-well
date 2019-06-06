@@ -1,8 +1,8 @@
 import React from "react";
-import { Link, withRouter, Redirect } from "react-router-dom";
 import { createStory } from "../../util/story_api_util";
 import { connect } from "react-redux";
 import { receiveStory } from "../../util/story_actions";
+
 class StoryCreate extends React.Component {
   constructor(props) {
     super(props);
@@ -28,23 +28,19 @@ class StoryCreate extends React.Component {
       title: this.state.title,
       body: this.state.body
     };
-    if (story.title !== "" && story.body !== "") {
-      try {
-        createStory(story)
-          .then(newlyCreatedStory => {
-            receiveStory(newlyCreatedStory);
-            return newlyCreatedStory;
-          })
-          .then(newlyCreatedStory => {
-            history.push(`/story/${newlyCreatedStory.id}`);
-          });
-      } catch (error) {
-        this.setState({ error: error });
+
+    createStory(story).then(
+      data => {
+        history.push(`/story/${data.id}`);
+      },
+      () => {
+        this.setState({ error: "Oops! Something went wrong." });
       }
-    }
+    );
   }
 
   render() {
+    console.log(this.state);
     return (
       <div className="create">
         <form onSubmit={this.handleSubmit}>
@@ -66,6 +62,10 @@ class StoryCreate extends React.Component {
             placeholder="Your Story Here."
           />
           <button type="submit">Publish</button>
+          <br />
+          {this.state.error && (
+            <span style={{ color: "red" }}>{this.state.error}</span>
+          )}
         </form>
       </div>
     );
