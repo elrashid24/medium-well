@@ -1,36 +1,41 @@
 import React from "react";
-import GreetingContainer from "./greeting/greeting_container";
-import { Route, Switch, Link, HashRouter } from "react-router-dom";
-import SignUpFormContainer from "./session_form/signup_form_container";
-import LogInFormContainer from "./session_form/login_form_container";
-import { AuthRoute, ProtectedRoute } from "../util/route_util";
+
+import { Route, Switch } from "react-router-dom";
+
+import { ProtectedRoute } from "../util/route_util";
 import Modal from "../modal/modal";
 import StoryIndexContainer from "./home_page/story_index_container";
 import StoryShowContainer from "./stories/story_show_container";
 import StoryCreate from "./stories/story_create";
-import Header from "./header";
+
 import UserShowContainer from "./stories/user_stories_container";
 import { connect } from "react-redux";
 import { fetchStories } from "../util/story_actions";
 import StoryEdit from "./stories/story_edit";
-
+import { NavBar } from "./NavBar";
+import { openModal } from "../actions/modal_actions";
+import { logout } from "../actions/session_actions";
 class App extends React.Component {
   componentDidMount() {
     return this.props.fetchStories();
   }
   render() {
+    const {
+      isLoggedIn,
+      openLoginModal,
+      openSignupModal,
+      onLogout
+    } = this.props;
     return (
-      <div>
-        <div className="navBar-l1">
-          <nav className="nav">
-            <Link to="/" className="logo">
-              <h1>Medium Well</h1>
-            </Link>
-          </nav>
-        </div>
-        {/* <Header/> */}
+      <div className="app">
+        <NavBar
+          isLoggedIn={isLoggedIn}
+          openLoginModal={openLoginModal}
+          openSignupModal={openSignupModal}
+          onLogout={onLogout}
+        />
+
         <Modal />
-        <GreetingContainer />
         <Switch>
           <ProtectedRoute exact path="/stories/new" component={StoryCreate} />
           <ProtectedRoute
@@ -50,10 +55,19 @@ class App extends React.Component {
     );
   }
 }
-const mapDispatchToProps = dispatch => ({
-  fetchStories: () => dispatch(fetchStories())
+
+const mapStateToProps = state => ({
+  isLoggedIn: state.session.id
 });
+
+const mapDispatchToProps = dispatch => ({
+  fetchStories: () => dispatch(fetchStories()),
+  openLoginModal: () => dispatch(openModal("login")),
+  openSignupModal: () => dispatch(openModal("signup")),
+  onLogout: () => dispatch(logout())
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(App);

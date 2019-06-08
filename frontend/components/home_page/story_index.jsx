@@ -11,16 +11,17 @@ class StoryIndex extends React.Component {
       <div className="main">
         <div className="home-container">
           <div className="top-container">
-            <TopFeed stories={stories.slice(0, 5)} />;
+            <TopFeed stories={stories.slice(0, 5)} />
           </div>
+          <hr className="divider" />
           <div className="bottom-container">
             <div className="bottom-left-container">
               <div className="bottom-left-items">
-                <PopularStories stories={stories.slice(5)} />;
+                <PopularStories stories={stories.slice(11)} />
               </div>
             </div>
             <div className="bottom-right-container" />
-            <SuggestedStories stories={stories.slice(8)} />;
+            <SuggestedStories stories={stories.slice(6, 11)} />
           </div>
         </div>
       </div>

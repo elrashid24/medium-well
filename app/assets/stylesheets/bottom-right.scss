@@ -1,30 +1,39 @@
-// .bottom-right{
-//     width:
-// }
+.suggested-header {
+  display: flex;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
 
-// .bottom-right-container{
-//     width: 30%;
-//     margin-right: 60px;
-// }
-// .bottom-right-numbering{
+.bottom-right-story {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.bottom-right-author {
+  margin-top: 20px;
+}
 
-// }
-// .bottom-right-header{
-//     margin: 32px 32px 0 32px;
-//     padding-bottom: 16px;
-//     border-bottom: 1px solid rgba(0,0,0,0.2);
-//     font-weight: 600;
-//     font-size: 20px;
-// }
+.bottom-right-title {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.4px;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: black;
+  width: 100%;
+}
 
-// .bottom-right-title{
-
-// }
-
-// .bottom-right-author{
-
-// }
-
-.bototm-right-body{
-    display: felx;
+.suggested-stories-container {
+  position: sticky;
+  top: 0;
+  margin: 0 30px 0 auto;
+  height: fit-content;
+  width: 264px;
+  margin-right: 150px;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: black;
 }

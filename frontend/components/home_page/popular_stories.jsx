@@ -15,12 +15,19 @@ const PopularStories = ({ stories }) => {
 const PopularStoryItem = ({ story }) => {
   return (
     <Link to={`/story/${story.id}`}>
+      
       <div className="bottom-left-story">
-        <span className="bottom-left-title">{story.title}</span>
-        <p className="bottom-left-preview">{story.body.slice(0, 120)}...</p>
-        <span className="bottom-left-author">Author: Stephen A. Smith</span>
-      </div>
-      <img className="bottom-left-pic" src={story.photoUrl || DEFAULT_IMAGE} />
+        <div className="bls-text">
+          <span className="bottom-left-title">{story.title}</span>
+          <p className="bottom-left-preview">{story.body.slice(0, 120)}...</p> 
+          <span className="bottom-left-author">Author: Stephen A. Smith</span>
+        </div>
+        <img
+          className="bottom-left-pic"
+          src={story.photoUrl || DEFAULT_IMAGE}
+        />
+        </div>
+     
     </Link>
   );
 };
