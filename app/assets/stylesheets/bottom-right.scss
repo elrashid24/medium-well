@@ -1,39 +1,9 @@
-.suggested-header {
-  display: flex;
-  font-family: "Open Sans", Arial, sans-serif;
-  margin-top: 10px;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.bottom-right-story {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-.bottom-right-author {
-  margin-top: 20px;
-}
-
-.bottom-right-title {
-  margin-top: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  color: black;
-  letter-spacing: 0.4px;
-  font-family: medium-content-sans-serif-font, "Lucida Grande",
-    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-  color: black;
-  width: 100%;
-}
-
 .suggested-stories-container {
-  position: sticky;
-  top: 0;
-  margin: 0 30px 0 auto;
-  height: fit-content;
-  width: 264px;
-  margin-right: 150px;
-  font-family: medium-content-sans-serif-font, "Lucida Grande",
-    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-  color: black;
+  max-width: 300px;
+}
+
+.suggested-header {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -7,6 +7,7 @@ const SuggestedStories = ({ stories }) => {
     <div className="suggested-stories-container">
       {" "}
       <div className="suggested-header">Popular on Medium Well</div>
+      <hr className="Divider" />
       {stories.map(story => (
         <SuggestedStoryItem key={story.id} story={story} />
       ))}

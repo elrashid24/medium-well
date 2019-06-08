@@ -1,0 +1,52 @@
+.nav-bar-container {
+  height: 65px;
+  box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.4);
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav-bar-logo {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.nav-bar-btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-btn {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+$size: 40px;
+.nav-bar-avi {
+  height: $size;
+  width: $size;
+  border-radius: $size / 2;
+  background-color: green;
+}
+
+.default {
+  background-color: white;
+}
+
+.primary {
+  background-color: green;
+  color: white;
+}

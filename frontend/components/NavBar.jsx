@@ -7,10 +7,10 @@ export const NavBar = ({
   openSignupModal,
   onLogout
 }) => (
-  <div className="nav-bar">
-    <nav className="nav">
-      <Link to="/" className="nav-logo">
-        <span>Medium Well</span>
+  <div className="nav-bar-container">
+    <nav className="nav-bar-nav">
+      <Link to="/">
+        <span className="nav-bar-logo">Medium Well</span>
       </Link>
       {isLoggedIn ? (
         <AuthButtons onLogout={onLogout} />
@@ -25,23 +25,23 @@ export const NavBar = ({
 );
 
 const NoAuthButtons = ({ openLoginModal, openSignupModal }) => (
-  <div className="nav-buttons">
-    <button className="nav-button" onClick={openLoginModal}>
+  <div className="nav-bar-btn-group">
+    <button className="nav-bar-btn default" onClick={openLoginModal}>
       Sign in
     </button>
-    <button className="nav-button" onClick={openSignupModal}>
+    <button className="nav-bar-btn primary" onClick={openSignupModal}>
       Get started!
     </button>
   </div>
 );
 
 const AuthButtons = ({ onLogout }) => (
-  <div className="nav-buttons">
-    <button className="nav-button" onClick={onLogout}>
+  <div className="nav-bar-btn-group">
+    <button className="nav-bar-btn default" onClick={onLogout}>
       Log Out
     </button>
     <Link to="/stories/mine">
-      <img src="" alt="your avatar" className="avatar" />
+      <img className="nav-bar-avi" />
     </Link>
   </div>
 );

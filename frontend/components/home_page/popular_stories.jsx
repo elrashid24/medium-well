@@ -2,33 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { DEFAULT_IMAGE } from "../../constants";
 
-const PopularStories = ({ stories }) => {
+const StoryList = ({ stories }) => {
   return (
-    <div className="popular-stories-container">
+    <div className="story-list-container">
       {stories.map(story => (
-        <PopularStoryItem key={story.id} story={story} />
+        <StoryItem key={story.id} story={story} />
       ))}
     </div>
   );
 };
 
-const PopularStoryItem = ({ story }) => {
+const StoryItem = ({ story }) => {
   return (
     <Link to={`/story/${story.id}`}>
-      
-      <div className="bottom-left-story">
-        <div className="bls-text">
-          <span className="bottom-left-title">{story.title}</span>
-          <p className="bottom-left-preview">{story.body.slice(0, 120)}...</p> 
-          <span className="bottom-left-author">Author: Stephen A. Smith</span>
+      <div className="story-item">
+        <div className="story-item-text">
+          <span className="story-item-title">{story.title}</span>
+          <p className="story-item-preview">{story.body.slice(0, 120)}...</p>
+          <span className="story-item-author">Author: Stephen A. Smith</span>
         </div>
-        <img
-          className="bottom-left-pic"
-          src={story.photoUrl || DEFAULT_IMAGE}
-        />
-        </div>
-     
+        <img className="story-item-pic" src={story.photoUrl || DEFAULT_IMAGE} />
+      </div>
     </Link>
   );
 };
-export default PopularStories;
+export default StoryList;

@@ -1,20 +1,22 @@
 import React from "react";
-
 import { Route, Switch } from "react-router-dom";
+import { connect } from "react-redux";
 
+// components
+import AuthModal from "./AuthModal";
 import { ProtectedRoute } from "../util/route_util";
-import Modal from "../modal/modal";
 import StoryIndexContainer from "./home_page/story_index_container";
 import StoryShowContainer from "./stories/story_show_container";
 import StoryCreate from "./stories/story_create";
-
 import UserShowContainer from "./stories/user_stories_container";
-import { connect } from "react-redux";
-import { fetchStories } from "../util/story_actions";
 import StoryEdit from "./stories/story_edit";
 import { NavBar } from "./NavBar";
+
+// actions
+import { fetchStories } from "../util/story_actions";
 import { openModal } from "../actions/modal_actions";
 import { logout } from "../actions/session_actions";
+
 class App extends React.Component {
   componentDidMount() {
     return this.props.fetchStories();
@@ -35,7 +37,7 @@ class App extends React.Component {
           onLogout={onLogout}
         />
 
-        <Modal />
+        <AuthModal />
         <Switch>
           <ProtectedRoute exact path="/stories/new" component={StoryCreate} />
           <ProtectedRoute
