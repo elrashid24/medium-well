@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { DEFAULT_IMAGE } from "../../constants";
+import { DEFAULT_IMAGE } from "../constants";
 
 const StoryList = ({ stories }) => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import TopFeed from "./top_feed";
-import StoryList from "./popular_stories";
-import SuggestedStories from "./suggested_stories";
+import StoryList from "../StoryList";
+import SuggestedStories from "./SuggestedStories";
 
 class StoryIndex extends React.Component {
   render() {
@@ -13,7 +13,9 @@ class StoryIndex extends React.Component {
           <div className="top-container">
             <TopFeed stories={stories.slice(0, 5)} />
           </div>
+
           <hr className="divider" />
+
           <div className="bottom-container">
             <StoryList stories={stories.slice(11)} />
             <SuggestedStories stories={stories.slice(6, 11)} />

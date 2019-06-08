@@ -17,12 +17,15 @@ $light-gray: #e0e0e0;
     background-color: $light-gray;
     color: $light-gray;
     border-top: none;
+    margin: auto;
+    width: 100%;
   }
 }
 .top-container {
   display: flex;
   height: 70%;
 }
+
 .top-feed-container {
   display: flex;
   justify-content: space-between;
