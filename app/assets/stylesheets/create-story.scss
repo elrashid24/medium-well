@@ -1,0 +1,33 @@
+.create-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.create-story-title {
+  font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  width: 700px;
+  height: 50px;
+  font-size: 35px;
+  border: none;
+  text-indent: 5px;
+}
+.create-story-body {
+  font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+  width: 700px;
+  height: 500px;
+  font-size: 20px;
+  line-height: 1.6;
+  border: none;
+  text-indent: 5px;
+  text-decoration: none;
+  resize: none;
+}
+.publish-button {
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 4px;
+  margin: 0 4px;
+}

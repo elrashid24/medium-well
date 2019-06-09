@@ -37,11 +37,11 @@ const NoAuthButtons = ({ openLoginModal, openSignupModal }) => (
 
 const AuthButtons = ({ onLogout }) => (
   <div className="nav-bar-btn-group">
+    <Link to="/stories/mine" className="nav-bar-avi">
+      My Stories
+    </Link>
     <button className="nav-bar-btn default" onClick={onLogout}>
       Log Out
     </button>
-    <Link to="/stories/mine">
-      <img className="nav-bar-avi" />
-    </Link>
   </div>
 );

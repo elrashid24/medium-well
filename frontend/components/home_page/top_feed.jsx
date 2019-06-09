@@ -15,7 +15,7 @@ const TopFeed = ({ stories }) => {
           <Link to={`/story/${stories[0].id}`}>
             <h1 className="top-left-title">{stories[0].title}</h1>
             <h2 className="top-left-preview">
-              {stories[0].body.slice(0, 120)}...
+              {stories[0].body.slice(0, 80)}...
             </h2>
           </Link>
           <p className="top-left-author">
@@ -36,7 +36,7 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[1].id}`}>
               <h1 className="top-middle-title">{stories[1].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[1].body.slice(0, 65)}...
+                {stories[1].body.slice(0, 45)}...
               </h2>
             </Link>
             <p className="top-middle-author">
@@ -56,7 +56,7 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[2].id}`}>
               <h1 className="top-middle-title">{stories[2].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[2].body.slice(0, 65)}...
+                {stories[2].body.slice(0, 45)}...
               </h2>
             </Link>
             <p className="top-middle-author">
@@ -76,7 +76,7 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[3].id}`}>
               <h1 className="top-middle-title">{stories[3].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[3].body.slice(0, 65)}...
+                {stories[3].body.slice(0, 45)}...
               </h2>
             </Link>
             <p className="top-middle-author">
@@ -85,7 +85,7 @@ const TopFeed = ({ stories }) => {
           </div>
         </div>
       </div>
-
+      
       <div className="top-right">
         <Link to={`/story/${stories[4].id}`}>
           <img
@@ -99,11 +99,12 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[4].id}`}>
               <h1 className="top-right-title">{stories[4].title}</h1>
               <h2 className="top-right-preview">
-                {stories[4].body.slice(0, 110)}...
+                {stories[4].body.slice(0, 70)}...
               </h2>
             </Link>
             <p className="top-right-author">
-              <Link to={`/story/${stories[4].id}`}>Whoever</Link>
+              {/* <Link to={`/story/${stories[4].id}`}>Whoever</Link> */}
+              can you see anything
             </p>
           </div>
         </div>

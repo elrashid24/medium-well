@@ -1,6 +1,17 @@
+$light-gray: #e0e0e0;
 .bottom-container {
   display: flex;
   justify-content: space-evenly;
   width: 90%;
   margin-top: 60px;
+  
+  .divider {
+    max-width: 1200px;
+    border-color: $light-gray;
+    background-color: $light-gray;
+    color: $light-gray;
+    border-top: none;
+    margin: auto;
+    width: 100%;
+  }
 }

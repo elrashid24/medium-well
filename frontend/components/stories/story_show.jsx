@@ -16,11 +16,11 @@ class StoryShow extends React.Component {
     if (!story) return null;
     return (
       <div className="show-container">
+        <div className="show-title">{story.title}</div>
+        <div className="show-author">Elrashid Elzein</div>
         <div className="show-pic-container">
           <img className="show-pic" src={story.photoUrl || DEFAULT_IMAGE} />
         </div>
-        <h1 className="show-title">{story.title}</h1>
-        <div className="show-author">{story.first_name}</div>
         <div className="show-body">{story.body}</div>
       </div>
     );

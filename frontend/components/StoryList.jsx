@@ -12,7 +12,7 @@ const StoryList = ({ stories }) => {
   );
 };
 
-const StoryItem = ({ story }) => {
+export const StoryItem = ({ story }) => {
   return (
     <Link to={`/story/${story.id}`}>
       <div className="story-item">

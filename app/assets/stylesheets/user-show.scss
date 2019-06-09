@@ -1,0 +1,60 @@
+.user-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-story-list {
+  max-width: 600px;
+  width: 100%;
+
+  .title {
+    color: black;
+  }
+
+  .divider {
+    margin: 20px 0;
+  }
+}
+
+.user-story-item {
+  height: 400px;
+  box-shadow: 0px 1px 4px gainsboro;
+  padding: 32px;
+  margin-bottom: 20px;
+}
+
+.user-story-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+$size: 40px;
+.user-story-author {
+  display: flex;
+  flex-direction: row;
+  .name {
+    color: black;
+    margin-right: 20px;
+  }
+  .avi {
+    background-color: green;
+    height: $size;
+    width: $size;
+    border-radius: $size / 2;
+    margin-bottom: 10px;
+  }
+}
+
+.user-story-img-container {
+  height: 40%;
+  background-color: none;
+}
+.user-story-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.user-story-img {
+  height: 100%;
+}

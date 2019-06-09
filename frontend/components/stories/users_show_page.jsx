@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { deleteStory } from "../../util/story_api_util";
-import { updateStory } from "../../util/story_api_util";
 import { removeStory } from "../../util/story_actions";
 import { receiveStory } from "../../util/story_actions";
 import { connect } from "react-redux";
@@ -9,47 +8,62 @@ import { DEFAULT_IMAGE } from "../../constants";
 
 class UserShow extends React.Component {
   render() {
+    const { stories, removeStory, history } = this.props;
+
     return (
-      <div className="show-container">
-        <h1 className="user-show-">My Stories</h1>
-        <ul>
-          {this.props.stories.map(story => (
-            <li key={story.id}>
-              <Link to={`/story/${story.id}`}>
-                <span className="show-title">{story.title}</span>
-                <Link to="/stories/new" className="new-story-button">
-                  Write A story
-                </Link>
-              </Link>
-              <div className="show-pic-container">
-                <img
-                  className="show-pic"
-                  src={story.photoUrl || DEFAULT_IMAGE}
-                />
-              </div>
-              <button
-                onClick={() =>
+      <div className="user-show">
+        <div className="user-story-list">
+          <h1 className="title">Elrashid's Stories</h1>
+          <hr className="divider" />
+          {stories.map(story => {
+            return (
+              <UserStoryItem
+                story={story}
+                key={story.id}
+                onClickDelete={() =>
                   deleteStory(story.id).then(() => {
-                    this.props.removeStory(story.id);
+                    removeStory(story.id);
                   })
                 }
-              >
-                Delete Story
-              </button>
-              <button
-                onClick={() => {
-                  this.props.history.push(`/stories/${story.id}/edit`);
+                onClickEdit={() => {
+                  history.push(`/stories/${story.id}/edit`);
                 }}
-              >
-                Edit Story
-              </button>
-            </li>
-          ))}
-        </ul>
+                onClickNew={() => {
+                  history.push(`/stories/new`);
+                }}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   }
 }
+
+const UserStoryItem = ({ story, onClickEdit, onClickDelete, onClickNew }) => {
+  return (
+    <div className="user-story-item">
+      <div className="user-story-header">
+        <div className="user-story-author">
+          <div className="name">{story.author || "Elrashid Elzein"}</div>
+          <div className="avi" />
+        </div>
+        <div className="user-story-btns">
+          <button onClick={onClickNew}>New Story</button>
+          <button onClick={onClickEdit}>Edit Story</button>
+          <button onClick={onClickDelete}>Delete Story</button>
+        </div>
+      </div>
+      <div className="user-story-img-container">
+        <img className="user-story-img" src={story.photoUrl || DEFAULT_IMAGE} />
+      </div>
+      <div className="user-story-text">
+        <div className="user-story-title">{story.title}</div>
+        <div className="user-story-preview">{story.body.slice(0, 110)}...</div>
+      </div>
+    </div>
+  );
+};
 
 const mapDispatchToProps = dispatch => ({
   removeStory: id => dispatch(removeStory(id)),
