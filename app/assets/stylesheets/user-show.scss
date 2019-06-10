@@ -18,7 +18,8 @@
 }
 
 .user-story-item {
-  height: 400px;
+  height: 600px;
+  width: 600px;
   box-shadow: 0px 1px 4px gainsboro;
   padding: 32px;
   margin-bottom: 20px;
@@ -47,14 +48,87 @@ $size: 40px;
 }
 
 .user-story-img-container {
-  height: 40%;
-  background-color: none;
+  height: 80%;
+  width: 80%;
+  background-color: red;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .user-story-btns {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .user-story-img {
   height: 100%;
+  width: 100%;
+}
+
+.user-stats {
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: gray;
+  font-style: italic;
+}
+
+.new-story-button {
+  cursor: pointer;
+  padding-right: 14px;
+  border: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background: white;
+  border: none;
+  color: #03a97d;
+  align-items: center;
+}
+
+.edit-story-button {
+  cursor: pointer;
+  padding-right: 14px;
+  border: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background: white;
+  border: none;
+  color: #03a97d;
+  align-items: center;
+}
+.delete-story-button {
+  cursor: pointer;
+  border: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background: white;
+  border: none;
+  color: #03a97d;
+  align-items: center;
+}
+
+.user-story-title {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}
+
+.user-story-author {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-story-preview {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }

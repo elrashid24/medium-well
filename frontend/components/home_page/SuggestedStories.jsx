@@ -20,7 +20,7 @@ const SuggestedStoryItem = ({ story, number }) => {
         <span className="suggested-number">0{number}</span>
         <div className="suggested-text">
           <span className="suggested-title">{story.title}</span>
-          <p className="suggested-author">Author: Stephen A. Smith</p>
+          <p className="suggested-author">Elrashid Elzein</p>
         </div>
       </div>
     </Link>

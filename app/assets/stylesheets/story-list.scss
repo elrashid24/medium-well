@@ -1,3 +1,4 @@
+$light-gray: #e0e0e0;
 .story-list-container {
   max-width: 62.5%;
 }
@@ -35,4 +36,13 @@
   font-size: 12px;
   color: black;
   margin-bottom: 20px;
+}
+
+.story-list-header {
+  font-size: 14px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  color: gray;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }

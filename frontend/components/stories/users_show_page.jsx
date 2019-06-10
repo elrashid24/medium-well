@@ -13,7 +13,12 @@ class UserShow extends React.Component {
     return (
       <div className="user-show">
         <div className="user-story-list">
-          <h1 className="title">Elrashid's Stories</h1>
+          <h1 className="title">Rusty Schackleford</h1>
+          <div className="user-stats">
+            <p>Member since March 11, 2019</p>
+            <p>Stories: 1</p>
+            <p>Followers: 3,571,489</p>
+          </div>
           <hr className="divider" />
           {stories.map(story => {
             return (
@@ -45,22 +50,34 @@ const UserStoryItem = ({ story, onClickEdit, onClickDelete, onClickNew }) => {
     <div className="user-story-item">
       <div className="user-story-header">
         <div className="user-story-author">
-          <div className="name">{story.author || "Elrashid Elzein"}</div>
-          <div className="avi" />
+          <div className="name">{story.author || "Rusty Schackleford"}</div>
         </div>
         <div className="user-story-btns">
-          <button onClick={onClickNew}>New Story</button>
-          <button onClick={onClickEdit}>Edit Story</button>
-          <button onClick={onClickDelete}>Delete Story</button>
+          <button className="new-story-button" onClick={onClickNew}>
+            New Story
+          </button>
+          <button className="edit-story-button" onClick={onClickEdit}>
+            Edit Story
+          </button>
+          <button className="delete-story-button" onClick={onClickDelete}>
+            Delete Story
+          </button>
         </div>
       </div>
-      <div className="user-story-img-container">
-        <img className="user-story-img" src={story.photoUrl || DEFAULT_IMAGE} />
-      </div>
-      <div className="user-story-text">
-        <div className="user-story-title">{story.title}</div>
-        <div className="user-story-preview">{story.body.slice(0, 110)}...</div>
-      </div>
+      <Link to={`/story/${story.id}`}>
+        <div className="user-story-img-container">
+          <img
+            className="user-story-img"
+            src={story.photoUrl || DEFAULT_IMAGE}
+          />
+        </div>
+        <div className="user-story-text">
+          <div className="user-story-title">{story.title}</div>
+          <div className="user-story-preview">
+            {story.body.slice(0, 110)}...
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };

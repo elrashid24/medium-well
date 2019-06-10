@@ -5,6 +5,8 @@ import { DEFAULT_IMAGE } from "../constants";
 const StoryList = ({ stories }) => {
   return (
     <div className="story-list-container">
+      <div className="story-list-header">BASED ON YOUR READING HISTORY</div>
+
       {stories.map(story => (
         <StoryItem key={story.id} story={story} />
       ))}

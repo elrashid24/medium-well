@@ -55,7 +55,7 @@ $light-gray: #e0e0e0;
 // .top-middle {
 //   display: flex;
 //   margin-bottom: 2px;
-//   margin-right: 10px;
+//   margin-right: 12px;
 //   margin-left: 10px;
 //   padding-left: 0px;
 // }
@@ -209,6 +209,37 @@ $light-gray: #e0e0e0;
 }
 
 .top-middle-author {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.top-left-read {
+  margin-top: 8px;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: gray;
+  height: 100%;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.top-middle-read {
+  margin-top: 8px;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: gray;
+  height: 100%;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.top-right-read {
+  margin-top: 2px;
+  margin-bottom: 12px;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  color: gray;
+  height: 100%;
+  font-style: italic;
+  font-size: 12px;
 }

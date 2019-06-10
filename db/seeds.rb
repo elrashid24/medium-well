@@ -88,7 +88,7 @@ They began the class by asking students to try to distinguish pseudoarchaeology 
      
      publish_date: Date.new)
     
-     test_story_6 = Story.create!( title: 'Area 51: Alien Playground',
+     test_story_5 = Story.create!( title: 'Area 51: An Alien Playground',
              
             body: "The universe is vast, filled with galaxies and planets. So much of space is left undiscovered, so there’s a good chance that humans aren’t the only form of life. Conspiracy theorists have generated curiosity about Area 51, a U.S. Air Force military installation in Roswell, Nevada. While the government hasn’t been totally transparent about what happens there, bizarre occurrences have led some people to believe that it’s a center for alien investigations.The main conspiracy of Area 51 stemmed from a mysterious incident that occured in Roswell in 1947 when a flying saucer crashed in a ranch. Some witnesses even claimed to have seen unusual figures, which they assumed to be exterrestrial. The Air Force later debunked these claims, releasing a statement positing that the balloon-like saucer was an atomic monitoring balloon for detecting nuclear blasts.While there are certainly holes in several of the Area 51 conspiracies, the government’s actions make it seem like they’re hiding something from the public. If the Pentagon just released that they’ve been studying UFOs, who knows what information will surface in the next 10-20 years. Regardless of what goes on inside Area 51, it remains highly secretive and continues to puzzle the American people.
 The theory caught on in the 1980s, when Robert Lazar claimed he worked near Area 51 for a site called S-4. He stated that S-4 was responsible for reverse-engineering crashed flying saucers. His tale, however, was soon after discovered to have been an untrue fabrication. He had made up an entire backstory that was false.Since the beginnings of the theory, there have been many other testimonials from people claiming to have seen UFOs in Nevada. More theories have surfaced, positing that the government studies time travel, ways to manipulate the weather and teleportation in the facility.  Some people even believe that the moon landing was faked and staged within the boundaries of Area 51. This theory is far-fetched, as there’s considerable evidence that the moon landing couldn’t have been faked.",
@@ -97,7 +97,7 @@ The theory caught on in the 1980s, when Robert Lazar claimed he worked near Area
              
             publish_date: Date.new)
          
-     test_story_5 = Story.create!( title:'Psychic Simpsons',
+     test_story_6 = Story.create!( title:'Psychic Simpsons',
         
         body: "How many of the real-world events depicted in The Simpsons have actually come to pass? Too darn many. The best-known example would have to be the seventeenth episode of season eleven, “Bart to the Future,” which shows Donald Trump as the President of the United States. The episode was first aired in March 2000, seventeen years before this actually came to pass.There are countless examples of events and incidents in The Simpsons having strange parallels, but is the show really predicting the future? What’s actually happening here?
 In 2018, The New York Times released a report entitled ‘The Simpsons’ Has Predicted A Lot. Most Of It Can Be Explained.’ It highlights the odd predictions –or coincidences—that have come out of the show over the course of its record run. These have included “the Trump presidency, the discovery of the Higgs boson particle, 9/11 and, most recently, Disney’s takeover of Fox.” There’s something uncanny about these things, there’s no denying, but there are rational explanations too.
@@ -111,7 +111,7 @@ The other thing to bear in mind is just how darn long the show has been going, a
 
         
         
-     test_story_10 = Story.create!( title:"Michael Jordan's Real Obsession",
+     test_story_7 = Story.create!( title:"Michael Jordan's Real Obsession",
         
         body: "Michael Jordan was one of the greatest players to ever play the game and is considered by many to be the best ever. He was a dominant offensive player who could score as well as anyone and as good as a perimeter defender as there has been.
 
@@ -147,7 +147,7 @@ Now why in the world would Jordan ever say if David Stern lets him back, then ma
         
 
         
-     test_story_7 = Story.create!( title: 'The Truth Behind the End of the Kobe-Shaq Era',
+     test_story_8 = Story.create!( title: 'The Truth Behind the End of the Kobe-Shaq Era',
              
             body: "One of the most dominant duos in NBA history, Kobe Bryant and Shaquille O’Neal, ruled the league like royalty at the turn of the century. Yet, what could have been a complete domination of 
             the decade by the Los Angeles Lakers turned into arguably the biggest divorce in the league’s modern era. 
@@ -160,7 +160,7 @@ Now why in the world would Jordan ever say if David Stern lets him back, then ma
           publish_date: Date.new)
      
           
-     test_story_8 = Story.create!( title: "The Wilt Chamberlain They Won't Tell You About.",
+     test_story_9 = Story.create!( title: "The Wilt Chamberlain They Won't Tell You About.",
              
             body: "What if I were to tell you that Wilt Chamberlain was the most skilled basketball player to have ever lived? Much of the myths abouth this awesome giant's career can be debunked. For example, many say he only dominated with his size.This is a common accusation, and to be honest, there is a certain amount of merit to it.
 It's an indisputable fact that the average NBA player in the '60s was smaller than the average player of today. During the 1961-62 season, for example, there were only three seven-footers in the nine-team league, along with two guys at 6'11 and three at 6'10. Boston and St. Louis topped out at 6'9.
@@ -176,139 +176,15 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
           publish_date: Date.new)
      
           
-          test_story_9 = Story.create!( title: 'The Poisoned Pizza that Immortalized Michael Jordan',
+          test_story_10 = Story.create!( title: 'The Poisoned Pizza that Immortalized Michael Jordan',
              
             body: "When you’re talking about Michael Jordan’s NBA Playoff basketball career, every conversation evokes moments of greatness. From the incredible performance during his second season where he put up 63 points against the Boston Celtics, to his “last shot” against the Utah Jazz, Michael Jordan has provided fans with an unending amount of memories to look back on fondly. It’s hard to pinpoint exactly what MJ’s greatest playoff moment was, but as we come up on the 18th anniversary of the “Flu Game,” it’s difficult to think of anything that showed just how tough Jordan really was more than that fateful June night.So we order a pizza, they come to deliver it, five guys come to deliver this pizza. And I’m just … I take the pizza, and I tell them, I said, ‘I got a bad feeling about this.’ I said, ‘I just got a bad feeling about this.’ Out of everybody in the room, he was the only one that ate. Nobody else … then 2 o’clock in the morning, I get a call to my room. I come to the room, he’s curled up, he’s curled up in the fetal position. We’re looking at him. We’re finding the team physician at that time. And immediately I said, ‘It’s food poisoning.’ Guaranteed. Not the fluTo this day, the legend of the “Flu Game” still amazes fans as Michael Jordan became the physical embodiment of the phrase “mind over matter.” To look into exactly what he may have dealt with during those legendary 44 minutes, we spoke with Dr. Tyeese Gaines, a practicing emergency medicine physician in New Jersey, to get her professional opinion on exactly what Michael Jordan’s body went through on that infamous day.",
             
             author_id: demoUser9.id, 
              
             publish_date: Date.new)
-          
-          
-          
-          
-            
-            
-            test_story_11 = Story.create!( title: 'Russell Westbrook is Officially the Problem in OKC',
-             
-            body: "Russell Westbrook and the Oklahoma City Thunder found themselves on the losing end of another first-round playoff series in the 2019 NBA playoffs. Their series loss against the Portland Trail Blazers was the third straight one-and-done series for OKC.
-             Now, there are a lot of questions as to whether Russell Westbrook can continue to be the franchise’s best player. He might be one of the most underrated players in NBA history, but some wonder if 
-             Oklahoma City should try to move on from the talented former MVP who is a triple-double machine and restart things with Paul George at the helm. With that in mind let’s explore if 
-             Russell Westbrook is the problem with the Oklahoma City Thunder. Since Kevin Durant left for Golden State, Oklahoma City has looked overmatched in each of their playoff series losses. 
-             They lost in five games to the Houston Rockets in 2017, and they followed it 
-             up with a six-game loss to the Utah Jazz last season. This year things were supposed to be different, as the Thunder looked to be a legitimate threat to Golden State in the West.After looking at everything regarding Oklahoma City Thunder superstar Russell Westbrook, we can say that he is a part of the problem for the team, but he isn’t the only one. 
-             A lack of talent at times and iffy coaching decisions don’t help the cause, but Westbrook’s overall decline is a culprit in the recent Thunder woes. Who do you expect to help Oklahoma City turn their playoff misfortune around? ",
-            
-             author_id: demoUser11.id, 
-             
-            publish_date: Date.new)
-            
-            
-            test_story_12 = Story.create!( title: 'Golden State Warriors: Steph Curry is the “system',
-             
-            body: "The Golden State Warriors are currently playing with three All-Stars (including a two-time Finals MVP), boast a 12-4 record that is good for first in the Western Conference, and yet with a 2-2 record in their last four games (inclusive of a 21-point beating by the Houston Rockets) observers agree that this team hasn’t looked like themselves recently.
-            How can that be the case then when this squad is the defending NBA champion, they have the one of the two best players in the league in Kevin Durant, a DPOY caliber player in Draymond Green, and one of the greatest shooters in NBA history in Klay Thompson?
-            Golden State prides itself on the system of basketball they employ, their “strength in numbers” mentality that is founded upon sharing and moving the basketball. Sure, Stephen Curry has been injured but clearly that shouldn’t mean this team becomes totally different?
-            Actually, that is exactly what happens when Steph Curry is taken out of the equation. The Warriors “system” doesn’t work as usual, surrounding players don’t have the same luxury of finding open shots, star players like Durant can’t easily go one-on-one, and opposing defenses suddenly feel they have a chance at halting the juggernaut that is the Warriors.",
-            
-             author_id: demoUser12.id, 
-             
-            publish_date: Date.new)
-            
-            
-            test_story_13 = Story.create!( title: 'Kobe Bryant vs. LeBron James: Is Bryant Better Overall?',
-             
-            body: "Before I start with this topic, I want to make it clear that I do not support any comparison between these two very talented athletes. I believe comparing athletes as finished products.A good example of finished product comparison would be Jordan vs. Magic, Hakeem vs. David Robinson, or even Wilt Chamberlain vs. Kareem Abdul Jabbar.
-            These guys played in the same era and against each other for years with memorable battles in the playoffs and the NBA finals.
-            Kobe and LeBron’s careers are far from over, and they are yet to play in any games that really matter—playoffs or NBA Finals.
-            Though I do not support the comparison, there is certainly a rivalry between those two.
-            Both guys continue to deny any kind of rivalry exists, especially Kobe.  Even if Kobe is not interested in there being any rivalry between he and the young man who would be King, the rest of us are. And that's why there's more info floating around the Web today than any of us have time to go through.
-            This rivalry has led to all this talk about who’s better.I’ve been in Chicago since the beginning of the year and didn’t have any free time to get a haircut; needless to say I was looking like a cave man and had hair growing on my face in areas I didn’t know could grow hair.
-            A friend referred me to this barber shop called A+ Plus Cuts, and I thought to myself.
-            I walked into a very heated debate in the barber shop about Kobe and LeBron and who is better.
-            The main argument was: Who had the most complete game, and who has the better supporting cast?
-            I personally believe that Kobe has the more mature and effective game; very few people in the NBA have had a talent this refreshing, yet entertaining to watch.
-            This helped to preserve his aging knees, and he went on to play 35 minutes or more a night for three more seasons.
-            For now, LeBron is still improving on his game and adding new assets to his portfolio every day. Last year, he added the long-range shot, and so far it seem like his three-point shots are getting better.
-            But for now, his No. 1 asset still remains driving it hard to the basket, over or around an opponent.",
-            
-             author_id: demoUser13.id, 
-             
-            publish_date: Date.new)
-
-            test_story_14 = Story.create!( title: 'The Kawhi Leonard Story: Why is he so quiet?',
-             
-            body: "Charles Barkley thinks Kawhi Leonard is the best player in the world. Coach David Fizdale thinks Leonard is a machine that bleeds antifreeze. Spurs fans will tell you the silent assassin nicknamed the Klaw because of his giant hands would have led San Antonio to the Finals if 
-            it wasn’t for dirty-ass Zaza Pachulia. One thing we all can agree on about the former NBA Finals MVP, who celebrates a birthday (or release date if you believe he is a machine that keeps getting better with each software update) today, 
-            is he doesn’t look like a very emotional guy. He usually looks like a guy who got dunked on after dunking on someone. He often celebrates wins by looking like he lost. His bench celebrations resemble a 12th man not getting any PT when his team is up by 20 in the fourth.
-            Besides the question posted by Nike above, the question a lot of people want to know is, “Why is Kawhi Leonard so quiet?”
-            Here’s Youtuber Swishout with an answer while telling “The (emotional) Kawhi Leonard Story.”harles Barkley thinks Kawhi Leonard is the best player in the world. Coach David Fizdale thinks Leonard is a machine that bleeds antifreeze. Spurs fans will tell you the silent assassin nicknamed the Klaw because of his giant hands would have led San Antonio to the Finals if it wasn’t for dirty-ass Zaza Pachulia. One thing we all can agree on about the former NBA Finals MVP, who celebrates a birthday (or release date if you believe he is a machine that keeps getting better with each software update) today, is he doesn’t look like a very emotional guy. He usually looks like a guy who got dunked on after dunking on someone. He often celebrates wins by looking like he lost. His bench celebrations resemble a 12th man not getting any PT when his team is up by 20 in the fourth.
-            Besides the question posted by Nike above, the question a lot of people want to know is, “Why is Kawhi Leonard so quiet?”
-            Here’s Youtuber Swishout with an answer while telling “The (emotional) Kawhi Leonard Story.”",
-            
-             author_id: demoUser14.id, 
-             
-            publish_date: Date.new)
-
-            
-            test_story_15 = Story.create!( title: 'The truth behind the end of the Kobe-Shaq Era',
-             
-            body: "
-            One of the most dominant duos in NBA history, Kobe Bryant and Shaquille O’Neal, ruled the league like royalty at the turn of the century. Yet, what could have been a complete domination of 
-            the decade by the Los Angeles Lakers turned into arguably the biggest divorce in the league’s modern era. 
-            A dynastic reign was cut short because of a long-running feud that could be resolved only by separating the two most valuable players in the Lakers’ lineup.According to many reports, the Kobe-Shaq era ended because two big egos couldn’t be contained on one roster without the team imploding. 
-            In the 2004 NBA Finals, with the team bolstered by the addition of Gary Payton and Karl Malone, two all-time greats who were at the tail end of their careers, 
-            the Lakers lost to the Detroit Pistons. Not to take anything away from coach Larry Brown’s defense-minded team, but a lack of cohesion and the injury that sidelined Malone in Game 3 took down the more talented Lakers as much as the Pistons’ own talents, their grit, and their determination.",
-            
-             author_id: demoUser15.id, 
-             
-            publish_date: Date.new)
-            
-            
-            test_story_16 = Story.create!( title: 'Why the Spurs are always so good',
-             
-            body: "
-            No one should be mystified that the Spurs are doing this, and not just because the Nuggets have very little collective playoff experience beyond Paul Millsap. The Spurs often do this! Here’s why, in my humble opinion: they always know what they are supposed to be doing, and the Spurs’ system on both ends is always designed to support the players’ strengths.
-            On the latter, for instance: in a league gone mad with three-pointers, the Spurs have few knockout three-point shooters (four of them, none of them top-three options on the team). As a result of playing to their strengths, San Antonio had the lowest three-point rate in the league. They still had the No. 7 offense in the NBA this season, though. 
-            The offense was based around ball protection and getting good shots wherever you find them. DeMar DeRozan and LaMarcus Aldridge shot quite efficiently on twos (DeRozan at 49 percent, Aldridge at 53 percent), Rudy Gay had his most efficient and lowest usage season ever as the third banana, and the others who mixed in focused on taking good shots and moving the ball without giving up turnovers. It worked! On Thursday, the Spurs had seven turnovers and shot 20-29 in the mid-range.
-            Meanwhile, the game plan every night is perfectly clear to everyone in a Spurs uniform. They know who they are and who they are not. Some of them are still learning the finer points of defensive philosophy, and it’s not the quickest or longest bunch, which has led to some problems on that end this series and season.
-            Both of these things come back down to this, the sole constants in the franchise over the past two and a half decades: the roster always makes sense, and the coaching is impeccable. When the roster has All-NBA-caliber players, the Spurs will be a title contender. When the roster has a fringe all-star or two, the Spurs will be competitive in the playoffs. It’s clockwork, and it should be celebrated.
-            All hail the Spurs, the anti-trend, ultra well-managed NBA team that will apparently never go away.
-            ",
-            
-             author_id: demoUser16.id, 
-             
-            publish_date: Date.new)
-            
-            
-            test_story_17 = Story.create!( title: 'Everybody (Still) Hates Dwight',
-             
-            body: "
-            Dwight Howard is just one team away from completing the dangerous and powerful Southeast Division Infinity Gauntlet. Now a member of the Washington Wizards, he’s set to play for his sixth franchise in eight seasons.
-            It’s not solely the quote that’s cringeworthy. If another NBA player, like Nick Young, would’ve said this, it might have come across as a humor-adjacent riff on a complicated career. 
-            The most noteworthy part would have been the implication that a player was “stung” by his former team. But these words were said by Dwight Howard.
-            Howard has a history of responding to every situation with a corny joke. It doesn’t matter whether he’s asked about a poor performance, team turmoil, or jilted fans; he’ll crack a smile and hit an unamused audience with C-grade open-mic material.",
-            
-             author_id: demoUser17.id, 
-             
-            publish_date: Date.new)
-
-             
          
-            test_story_18 = Story.create!( title: 'John Wall Contract Worst in NBA History',
-             
-            body: "
-            With the news that John Wall is out long term ​after rupturing his Achilles in a freak accident, the Wizards are forced to deal with the repercussions of a ​contract which was questioned at the time, but now appears truly hopeless.
-            Wall signed a max extension two summers ago, in a deal which is expected to pay him $170 million over the next four years. Given the fact that Wall is unlikely to play in the next full calendar year, this is the worst contract in the NBA and it isn't even close.
-            For Wall, the money isn't much of a consolation prize, as the former All-Star would much rather be on the court building upon his legacy in the DC metro area. Instead, he leaves the Wizards with little cap flexibility and the rotting corpse of a basketball team.
-            ",
-            
-             author_id: demoUser18.id, 
-             
-            publish_date: Date.new)
-
-            
-
+   
           
             file_0 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/illuminate.jpeg')
             test_story_0.photo.attach(io: file_0, filename: 'illuminate.jpeg')
@@ -325,52 +201,29 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
           file_4 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/falt-earth.jpeg')
           test_story_4.photo.attach(io: file_4, filename: 'falt-earth.jpeg')
           
-          file_5 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/simpsons.jpg')
-          test_story_5.photo.attach(io: file_5, filename: 'simpsons.jpg')
+           file_5 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/area-51.jpeg')
+          test_story_5.photo.attach(io: file_5, filename: 'area-51.jpeg')
           
-          file_6 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/area-51.jpeg')
-          test_story_6.photo.attach(io: file_6, filename: 'area-51.jpeg')
+          file_6 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/simpsons.jpg')
+          test_story_6.photo.attach(io: file_6, filename: 'simpsons.jpg')
           
           
           file_7 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/jordan-gamble.jpg')
           test_story_7.photo.attach(io: file_7, filename: 'jordan-gamble.jpg')
           
-          file_8 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/wilt.jpg')
-          test_story_8.photo.attach(io: file_8, filename: 'wilt.jpg')
+          file_8 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/shaq-and-kobe.jpg')
+          test_story_8.photo.attach(io: file_8, filename: 'shaq-and-kobe.jpg')
           
-          file_10 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/shaq-and-kobe.jpg')
-          test_story_10.photo.attach(io: file_10, filename: 'jordan-gamble.jpg')
-          
-          
-          
-          file_9 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/mjfluuu.jpg')
-          test_story_9.photo.attach(io: file_9, filename: 'mj-bron.jpg')
+          file_9 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/wilt.jpg')
+          test_story_9.photo.attach(io: file_9, filename: 'wilt.jpg')
+
+          file_10 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/mjfluuu.jpg')
+          test_story_10.photo.attach(io: file_10, filename: 'mjfluuu.jpg')
           
           
-          file_6 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/area-51.jpeg')
-          test_story_6.photo.attach(io: file_6, filename: 'area-51.jpeg')
-         
-          file_12 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/laker-rig.jpg')
-          test_story_12.photo.attach(io: file_12, filename: 'area-51.jpeg')
           
-          file_13 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/kobe-bron.jpg')
-          test_story_13.photo.attach(io: file_13, filename: 'kobe-bron.jpg')
           
-          file_14 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/kawhi.jpg')
-          test_story_14.photo.attach(io: file_14, filename: 'kawhi.jpg')
-          
-          file_15 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/shaq-kobe.jpeg')
-          test_story_15.photo.attach(io: file_15, filename: 'shaq-kobe.jpg')
-          
-          file_16 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/spurs.jpeg')
-          test_story_16.photo.attach(io: file_16, filename: 'spurs.jpg')
-          
-          file_17 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/dwight.jpg')
-          test_story_17.photo.attach(io: file_17, filename: 'dwight.jpg')
-          
-          file_18 = open('https://s3-us-west-1.amazonaws.com/medium-well-seed/wall.jpg')
-          test_story_18.photo.attach(io: file_18, filename: 'wall.jpg')
-          
+       
           
 end
 

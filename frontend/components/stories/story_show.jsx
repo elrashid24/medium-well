@@ -74,7 +74,7 @@ class StoryShow extends React.Component {
             placeholder="Write a Response..."
           />
           <button type="submit" className="publish-button">
-            Publish
+            Comment
           </button>
           <br />
           {this.state.error && (
