@@ -4,14 +4,19 @@ $light-gray: #e0e0e0;
   justify-content: space-evenly;
   width: 90%;
   margin-top: 60px;
-  
+
   .divider {
-    max-width: 1200px;
+    margin-top: 0px;
+    position: absolute;
+    max-width: 1290px;
     border-color: $light-gray;
     background-color: $light-gray;
     color: $light-gray;
     border-top: none;
-    margin: auto;
+    // margin: auto;
     width: 100%;
+    margin-bottom: 200px;
+    margin-left: 80px;
+    // height: 100%;
   }
 }

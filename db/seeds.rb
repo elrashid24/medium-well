@@ -108,7 +108,17 @@ The other thing to bear in mind is just how darn long the show has been going, a
         author_id: demoUser5.id,
         
         publish_date: Date.new)
+ test_story_11 = Story.create!( title: 'Are Birds Actually Government-Issued Drones?',
+             
+            body: "The CIA assassinated John F. Kennedy after he refused to kill and replace billions of birds with drones. The U.S. government is sequestering a team of Boeing engineers in Area 51 for a secret military mission. Our tax dollars have been funneled into building the “Turkey X500,” a robot used to hunt large birds.
 
+Combine all these conspiracies and you get Birds Aren’t Real, a nearly two-year-old movement that claims the CIA took out 12 billion feathered fugitives because directors within the organization were “annoyed that birds had been dropping fecal matter on their car windows.” The targets were eradicated between 1959 and 1971 with specially altered B-52 bombers stocked with poison. They were then supplanted with avian-like robots that could be used to surveil Americans.  
+
+Sounds extreme but also somewhat fitting, given the landscape of today's social discourse. By surfacing murky bits of history and the ubiquity of Aves, Birds Aren’t Real feeds into this era of post-truth politics. The campaign relies on internet-fueled guerilla marketing to spread its message, manifesting through real-world posters and Photoshopped propaganda tagged with the “Birds Aren’t Real” slogan.",
+            
+            author_id: demoUser9.id, 
+             
+            publish_date: Date.new)
         
         
      test_story_7 = Story.create!( title:"Michael Jordan's Real Obsession",
@@ -184,6 +194,12 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
              
             publish_date: Date.new)
          
+            
+            
+            
+           
+            
+         
    
           
             file_0 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/illuminate.jpeg')
@@ -206,6 +222,10 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
           
           file_6 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/simpsons.jpg')
           test_story_6.photo.attach(io: file_6, filename: 'simpsons.jpg')
+
+          file_11 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/pigeons.jpeg')
+          test_story_11.photo.attach(io: file_11, filename: 'pigeons.jpeg')
+          
           
           
           file_7 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/jordan-gamble.jpg')
@@ -219,6 +239,10 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
 
           file_10 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/mjfluuu.jpg')
           test_story_10.photo.attach(io: file_10, filename: 'mjfluuu.jpg')
+          
+          
+         #  file_11 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/pigeons.jpeg')
+         #  test_story_11.photo.attach(io: file_11, filename: 'pigeons.jpeg)
           
           
           

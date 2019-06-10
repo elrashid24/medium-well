@@ -1,6 +1,7 @@
 .suggested-container {
   max-width: 20%;
   height: 100%;
+  margin-top: 50px;
 }
 
 .suggested-header {
@@ -20,7 +21,7 @@ $light-gray: #e0e0e0;
 
 .suggested-story {
   display: flex;
-  justify-content: space-around;
+
   padding: 4px;
 }
 
