@@ -19,7 +19,7 @@ export const StoryItem = ({ story }) => {
         <div className="story-item-text">
           <span className="story-item-title">{story.title}</span>
           <p className="story-item-preview">{story.body.slice(0, 120)}...</p>
-          <span className="story-item-author">Author: Stephen A. Smith</span>
+          <span className="story-item-author">Author: Elrashid Elzein</span>
         </div>
         <img className="story-item-pic" src={story.photoUrl || DEFAULT_IMAGE} />
       </div>

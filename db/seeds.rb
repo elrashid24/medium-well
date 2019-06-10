@@ -87,8 +87,17 @@ They began the class by asking students to try to distinguish pseudoarchaeology 
      author_id: demoUser4.id,
      
      publish_date: Date.new)
+    
+     test_story_6 = Story.create!( title: 'Area 51: Alien Playground',
+             
+            body: "The universe is vast, filled with galaxies and planets. So much of space is left undiscovered, so there’s a good chance that humans aren’t the only form of life. Conspiracy theorists have generated curiosity about Area 51, a U.S. Air Force military installation in Roswell, Nevada. While the government hasn’t been totally transparent about what happens there, bizarre occurrences have led some people to believe that it’s a center for alien investigations.The main conspiracy of Area 51 stemmed from a mysterious incident that occured in Roswell in 1947 when a flying saucer crashed in a ranch. Some witnesses even claimed to have seen unusual figures, which they assumed to be exterrestrial. The Air Force later debunked these claims, releasing a statement positing that the balloon-like saucer was an atomic monitoring balloon for detecting nuclear blasts.While there are certainly holes in several of the Area 51 conspiracies, the government’s actions make it seem like they’re hiding something from the public. If the Pentagon just released that they’ve been studying UFOs, who knows what information will surface in the next 10-20 years. Regardless of what goes on inside Area 51, it remains highly secretive and continues to puzzle the American people.
+The theory caught on in the 1980s, when Robert Lazar claimed he worked near Area 51 for a site called S-4. He stated that S-4 was responsible for reverse-engineering crashed flying saucers. His tale, however, was soon after discovered to have been an untrue fabrication. He had made up an entire backstory that was false.Since the beginnings of the theory, there have been many other testimonials from people claiming to have seen UFOs in Nevada. More theories have surfaced, positing that the government studies time travel, ways to manipulate the weather and teleportation in the facility.  Some people even believe that the moon landing was faked and staged within the boundaries of Area 51. This theory is far-fetched, as there’s considerable evidence that the moon landing couldn’t have been faked.",
+            
+             author_id: demoUser10.id, 
+             
+            publish_date: Date.new)
          
-     test_story_5 = Story.create!( title:'The Psychic Simpsons',
+     test_story_5 = Story.create!( title:'Psychic Simpsons',
         
         body: "How many of the real-world events depicted in The Simpsons have actually come to pass? Too darn many. The best-known example would have to be the seventeenth episode of season eleven, “Bart to the Future,” which shows Donald Trump as the President of the United States. The episode was first aired in March 2000, seventeen years before this actually came to pass.There are countless examples of events and incidents in The Simpsons having strange parallels, but is the show really predicting the future? What’s actually happening here?
 In 2018, The New York Times released a report entitled ‘The Simpsons’ Has Predicted A Lot. Most Of It Can Be Explained.’ It highlights the odd predictions –or coincidences—that have come out of the show over the course of its record run. These have included “the Trump presidency, the discovery of the Higgs boson particle, 9/11 and, most recently, Disney’s takeover of Fox.” There’s something uncanny about these things, there’s no denying, but there are rational explanations too.
@@ -176,14 +185,7 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
             publish_date: Date.new)
           
           
-          test_story_6 = Story.create!( title: 'Area 51: Alien Playground',
-             
-            body: "The universe is vast, filled with galaxies and planets. So much of space is left undiscovered, so there’s a good chance that humans aren’t the only form of life. Conspiracy theorists have generated curiosity about Area 51, a U.S. Air Force military installation in Roswell, Nevada. While the government hasn’t been totally transparent about what happens there, bizarre occurrences have led some people to believe that it’s a center for alien investigations.The main conspiracy of Area 51 stemmed from a mysterious incident that occured in Roswell in 1947 when a flying saucer crashed in a ranch. Some witnesses even claimed to have seen unusual figures, which they assumed to be exterrestrial. The Air Force later debunked these claims, releasing a statement positing that the balloon-like saucer was an atomic monitoring balloon for detecting nuclear blasts.While there are certainly holes in several of the Area 51 conspiracies, the government’s actions make it seem like they’re hiding something from the public. If the Pentagon just released that they’ve been studying UFOs, who knows what information will surface in the next 10-20 years. Regardless of what goes on inside Area 51, it remains highly secretive and continues to puzzle the American people.
-The theory caught on in the 1980s, when Robert Lazar claimed he worked near Area 51 for a site called S-4. He stated that S-4 was responsible for reverse-engineering crashed flying saucers. His tale, however, was soon after discovered to have been an untrue fabrication. He had made up an entire backstory that was false.Since the beginnings of the theory, there have been many other testimonials from people claiming to have seen UFOs in Nevada. More theories have surfaced, positing that the government studies time travel, ways to manipulate the weather and teleportation in the facility.  Some people even believe that the moon landing was faked and staged within the boundaries of Area 51. This theory is far-fetched, as there’s considerable evidence that the moon landing couldn’t have been faked.",
-            
-             author_id: demoUser10.id, 
-             
-            publish_date: Date.new)
+          
           
             
             

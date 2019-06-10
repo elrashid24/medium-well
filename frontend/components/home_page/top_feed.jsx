@@ -19,7 +19,7 @@ const TopFeed = ({ stories }) => {
             </h2>
           </Link>
           <p className="top-left-author">
-            <Link to={`/story/${stories[0].id}`}>Whoever</Link>
+            <Link to={`/story/${stories[0].id}`}>Maya Kay</Link>
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ const TopFeed = ({ stories }) => {
               </h2>
             </Link>
             <p className="top-middle-author">
-              <Link to={`/story/${stories[1].id}`}>Whoever</Link>
+              <Link to={`/story/${stories[1].id}`}>Nicky Gribble</Link>
             </p>
           </div>
         </div>
@@ -60,7 +60,7 @@ const TopFeed = ({ stories }) => {
               </h2>
             </Link>
             <p className="top-middle-author">
-              <Link to={`/story/${stories[2].id}`}>Whoever</Link>
+              <Link to={`/story/${stories[2].id}`}>Denise Cao</Link>
             </p>
           </div>
         </div>
@@ -80,12 +80,12 @@ const TopFeed = ({ stories }) => {
               </h2>
             </Link>
             <p className="top-middle-author">
-              <Link to={`/story/${stories[3].id}`}>Whoever</Link>
+              <Link to={`/story/${stories[3].id}`}>Roderick Wells</Link>
             </p>
           </div>
         </div>
       </div>
-      
+
       <div className="top-right">
         <Link to={`/story/${stories[4].id}`}>
           <img
@@ -103,10 +103,10 @@ const TopFeed = ({ stories }) => {
               </h2>
             </Link>
             <p className="top-right-author">
-              {/* <Link to={`/story/${stories[4].id}`}>Whoever</Link> */}
-              can you see anything
+              <Link to={`/story/${stories[4].id}`}>Adriana Lui</Link>
             </p>
           </div>
+          <div />
         </div>
       </div>
     </div>

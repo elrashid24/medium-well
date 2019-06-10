@@ -21,7 +21,8 @@ class StoryCreate extends React.Component {
       title: "",
       body: "",
       photoURL: null,
-      error: null
+      error: null,
+      likes: 0
     };
     this.handleOnChange = this.handleOnChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
