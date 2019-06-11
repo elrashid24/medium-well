@@ -45,4 +45,3 @@ class Api::CommentsController < ApplicationController
   end
 end
 
-end
