@@ -1,0 +1,49 @@
+$light-gray: #e0e0e0;
+.story-list-container {
+  max-width: 62.5%;
+}
+
+.story-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.story-item-pic {
+  height: 120px;
+  width: 170px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+
+.story-item-title {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.story-item-preview {
+  margin-top: 10px;
+  margin-left: 0px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 20px;
+}
+
+.story-item-author {
+  margin-top: 10px;
+  margin-left: 0px;
+  font-size: 12px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.story-list-header {
+  margin-top: 50px;
+  font-size: 14px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  color: gray;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}

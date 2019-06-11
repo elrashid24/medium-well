@@ -1,0 +1,72 @@
+.nav-bar-container {
+  height: 65px;
+  box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.4);
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav-bar-logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Playfair Display", Georgia, serif;
+  margin-left: 40px;
+}
+
+.nav-bar-btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-btn {
+  width: 104px;
+  height: 35px;
+  border-radius: 4px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  text-align: center;
+  background: white;
+  border: none;
+  color: gray;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+$size: 40px;
+.nav-bar-avi {
+  // height: $size;
+  // width: $size;
+  // border-radius: $size / 2;
+  // background-color: green;
+  // border: none;
+  // background-image: url(https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_960_720.png);
+  width: 104px;
+  height: 35px;
+  border-radius: 4px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  border: none;
+  color: #03a97d;
+  align-items: center;
+}
+
+.default {
+  background-color: white;
+}
+
+.primary {
+  background-color: green;
+  color: white;
+}

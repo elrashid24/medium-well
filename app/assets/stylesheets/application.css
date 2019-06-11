@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.4px;
+}

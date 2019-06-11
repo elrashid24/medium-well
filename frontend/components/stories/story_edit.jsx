@@ -23,39 +23,44 @@ class StoryEdit extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const story = this.state;
-    updateStory(story)
-      .then(updatedStory => {
-        receiveStory(updatedStory);
-
-        return updatedStory;
-      })
-      .then(updatedStory => {
-        this.props.history.push(`/story/${updatedStory.id}`);
-      });
+    updateStory(story).then(
+      data => {
+        this.props.history.push(`/story/${data.id}`);
+      },
+      () => {
+        this.setState({ error: "Title and Body can't be blank." });
+      }
+    );
   }
   render() {
     console.log(this.state);
 
     return (
-      <div className="edit">
+      <div className="create-container">
         <form onSubmit={this.handleSubmit}>
           <input
             name="title"
             type="text"
-            className="new-story-title"
+            className="create-story-title"
             type="text"
             value={this.state.title}
             onChange={this.handleOnChange}
           />
           <br />
-          <input
+          <textarea
             name="body"
             type="text"
-            className="edit-story-body"
+            className="create-story-body"
             value={this.state.body}
             onChange={this.handleOnChange}
           />
-          <button type="submit">Update</button>
+          <button type="submit" className="publish-button">
+            Update
+          </button>
+          <br />
+          {this.state.error && (
+            <span style={{ color: "red" }}>{this.state.error}</span>
+          )}
         </form>
       </div>
     );

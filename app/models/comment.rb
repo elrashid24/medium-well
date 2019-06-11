@@ -12,5 +12,16 @@
 #
 
 class Comment < ApplicationRecord
+    validates :story_id, :author_id, :publish_date, :body, presence:true
+
+    belongs_to :Story,
+    primary_key: :id,
+    foreign_key: :story_id,
+    class_name: :Story
     
+    belongs_to :User, 
+    primary_key: :id, 
+    foreign_key: :author_id,
+    class_name: :User
+
 end

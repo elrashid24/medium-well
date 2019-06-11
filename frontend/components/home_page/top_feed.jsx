@@ -15,11 +15,14 @@ const TopFeed = ({ stories }) => {
           <Link to={`/story/${stories[0].id}`}>
             <h1 className="top-left-title">{stories[0].title}</h1>
             <h2 className="top-left-preview">
-              {stories[0].body.slice(0, 120)}...
+              {stories[0].body.slice(0, 80)}...
             </h2>
           </Link>
           <p className="top-left-author">
-            <Link to={`/story/${stories[0].id}`}>Whoever</Link>
+            <Link to={`/story/${stories[0].id}`}>Maya Kay</Link>
+          </p>
+          <p className="top-left-read">
+            <Link to={`/story/${stories[0].id}`}>5mn Read</Link>
           </p>
         </div>
       </div>
@@ -36,11 +39,14 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[1].id}`}>
               <h1 className="top-middle-title">{stories[1].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[1].body.slice(0, 65)}...
+                {stories[1].body.slice(0, 45)}...
               </h2>
             </Link>
             <p className="top-middle-author">
-              <Link to={`/story/${stories[1].id}`}>Whoever</Link>
+              <Link to={`/story/${stories[1].id}`}>Rusty Schacklford</Link>
+            </p>
+            <p className="top-middle-read">
+              <Link to={`/story/${stories[1].id}`}>11 minute Read</Link>
             </p>
           </div>
         </div>
@@ -56,11 +62,14 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[2].id}`}>
               <h1 className="top-middle-title">{stories[2].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[2].body.slice(0, 65)}...
+                {stories[2].body.slice(0, 45)}...
               </h2>
             </Link>
             <p className="top-middle-author">
-              <Link to={`/story/${stories[2].id}`}>Whoever</Link>
+              <Link to={`/story/${stories[2].id}`}>Denise Cao</Link>
+            </p>
+            <p className="top-middle-read">
+              <Link to={`/story/${stories[2].id}`}>8 minute read</Link>
             </p>
           </div>
         </div>
@@ -76,11 +85,14 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[3].id}`}>
               <h1 className="top-middle-title">{stories[3].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[3].body.slice(0, 65)}...
+                {stories[3].body.slice(0, 45)}...
               </h2>
             </Link>
             <p className="top-middle-author">
-              <Link to={`/story/${stories[3].id}`}>Whoever</Link>
+              <Link to={`/story/${stories[3].id}`}>Roderick Wells</Link>
+            </p>
+            <p className="top-middle-read">
+              <Link to={`/story/${stories[3].id}`}>4 minute read</Link>
             </p>
           </div>
         </div>
@@ -95,15 +107,21 @@ const TopFeed = ({ stories }) => {
         </Link>
 
         <div className="top-right-story">
-          <Link to={`/story/${stories[4].id}`}>
-            <h1 className="top-right-title">{stories[4].title}</h1>
-            <h2 className="top-right-preview">
-              {stories[4].body.slice(0, 110)}...
-            </h2>
-          </Link>
-          <p className="top-right-author">
-            <Link to={`/story/${stories[4].id}`}>Whoever</Link>
-          </p>
+          <div className="top-right-body">
+            <Link to={`/story/${stories[4].id}`}>
+              <h1 className="top-right-title">{stories[4].title}</h1>
+              <h2 className="top-right-preview">
+                {stories[4].body.slice(0, 70)}...
+              </h2>
+            </Link>
+            <p className="top-right-author">
+              <Link to={`/story/${stories[4].id}`}>Adriana Lui</Link>
+            </p>
+            <p className="top-right-read">
+              <Link to={`/story/${stories[4].id}`}>9 minute read</Link>
+            </p>
+          </div>
+          <div />
         </div>
       </div>
     </div>

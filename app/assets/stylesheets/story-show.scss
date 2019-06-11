@@ -1,0 +1,60 @@
+.show-container {
+  margin: 30px auto;
+  width: 700px;
+}
+
+.show-title {
+  margin-bottom: 20px;
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-size: 36px;
+}
+
+.show-author {
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.show-pic {
+  width: 100%;
+  height: auto;
+}
+
+.show-body {
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+  margin-top: 30px;
+  letter-spacing: 0.15px;
+  white-space: pre-line;
+  line-height: 2;
+}
+
+.clap-button {
+  width: 1px;
+  height: 1px;
+  border-radius: 4px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  border: none;
+  color: #03a97d;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  margin-top: 12px;
+}
+
+.claps {
+  font-family: medium-content-sans-serif-font, "Lucida Grande",
+    "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 30px;
+}
