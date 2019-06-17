@@ -35,6 +35,9 @@ class StoryComment extends React.Component {
   }
 
   render() {
+    const comments = this.props.comments.reverse().map((comment, i) => {
+      return <CommentItem key={comment.id} comment={comment} />;
+    });
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -59,7 +62,7 @@ class StoryComment extends React.Component {
         <div />
         <br />
         <div />
-        <CommentItem comments={this.props.comments} />
+        {comments}
       </div>
     );
   }
