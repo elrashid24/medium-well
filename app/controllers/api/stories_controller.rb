@@ -21,9 +21,7 @@ class Api::StoriesController < ApplicationController
     end
 
     def show
-        # debugger
         @story = Story.find_by(id: params[:id])
-        # debugger
         render 'api/stories/show'
     end
 
