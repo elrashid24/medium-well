@@ -1,4 +1,4 @@
-$light-gray: #e0e0e0;
+$light-gray: #e0e0e02f;
 .bottom-container {
   display: flex;
   justify-content: space-evenly;
@@ -9,9 +9,9 @@ $light-gray: #e0e0e0;
     margin-top: 0px;
     position: absolute;
     max-width: 1410px;
-    border-color: $light-gray;
-    background-color: $light-gray;
-    color: $light-gray;
+    border-color: gray;
+    background-color: rgba(128, 128, 128, 0.034);
+    color: gray;
     border-top: none;
     // margin: auto;
     width: 100%;

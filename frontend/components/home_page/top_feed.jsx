@@ -15,7 +15,7 @@ const TopFeed = ({ stories }) => {
           <Link to={`/story/${stories[0].id}`}>
             <h1 className="top-left-title">{stories[0].title}</h1>
             <h2 className="top-left-preview">
-              {stories[0].body.slice(0, 80)}...
+              {stories[0].body.slice(0, 140)}...
             </h2>
           </Link>
           <p className="top-left-author">
@@ -39,7 +39,7 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[1].id}`}>
               <h1 className="top-middle-title">{stories[1].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[1].body.slice(0, 45)}...
+                {stories[1].body.slice(0, 20)}...
               </h2>
             </Link>
             <p className="top-middle-author">
@@ -62,7 +62,7 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[2].id}`}>
               <h1 className="top-middle-title">{stories[2].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[2].body.slice(0, 45)}...
+                {stories[2].body.slice(0, 20)}...
               </h2>
             </Link>
             <p className="top-middle-author">
@@ -85,7 +85,7 @@ const TopFeed = ({ stories }) => {
             <Link to={`/story/${stories[3].id}`}>
               <h1 className="top-middle-title">{stories[3].title}</h1>
               <h2 className="top-middle-preview">
-                {stories[3].body.slice(0, 45)}...
+                {stories[3].body.slice(0, 20)}...
               </h2>
             </Link>
             <p className="top-middle-author">
