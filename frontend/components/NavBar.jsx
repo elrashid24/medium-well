@@ -37,6 +37,9 @@ const NoAuthButtons = ({ openLoginModal, openSignupModal }) => (
 
 const AuthButtons = ({ onLogout }) => (
   <div className="nav-bar-btn-group">
+    <Link to="/stories/new" className="nav-bar-avi">
+      New Story
+    </Link>
     <Link to="/stories/mine" className="nav-bar-avi">
       My Stories
     </Link>
