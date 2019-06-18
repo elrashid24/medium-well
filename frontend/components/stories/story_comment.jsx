@@ -29,14 +29,20 @@ class StoryComment extends React.Component {
         this.setState({ res: res });
       },
       () => {
-        this.setState({ error: "This comment thing isn't working." });
+        this.setState({ error: "You must be logged in to leave a comment." });
       }
     );
   }
 
   render() {
     const comments = this.props.comments.reverse().map((comment, i) => {
-      return <CommentItem key={comment.id} comment={comment} />;
+      return (
+        <CommentItem
+          key={comment.id}
+          comment={comment}
+          deleteComment={this.props.deleteComment}
+        />
+      );
     });
     return (
       <div>
@@ -53,7 +59,9 @@ class StoryComment extends React.Component {
           <button type="submit" className="publish-button">
             Comment
           </button>
-          <br />
+
+          <div className="comment-header">Comments:</div>
+
           {this.state.error && (
             <span style={{ color: "red" }}>{this.state.error}</span>
           )}

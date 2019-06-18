@@ -43,7 +43,7 @@ const TopFeed = ({ stories }) => {
               </h2>
             </Link>
             <p className="top-middle-author">
-              <Link to={`/story/${stories[1].id}`}>Rusty Schacklford</Link>
+              <Link to={`/story/${stories[1].id}`}>Rusty Schackleford</Link>
             </p>
             <p className="top-middle-read">
               <Link to={`/story/${stories[1].id}`}>11 minute Read</Link>

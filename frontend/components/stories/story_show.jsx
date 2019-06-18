@@ -57,11 +57,10 @@ class StoryShow extends React.Component {
           <StoryComment
             comments={this.props.comments}
             createComment={this.props.createComment}
+            deleteComment={this.props.deleteComment}
             storyId={this.props.story.id}
           />
         </div>
-        } />
-        <br />
       </div>
     );
   }

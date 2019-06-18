@@ -13,13 +13,10 @@ class StoryIndex extends React.Component {
           <TopFeed stories={stories.slice(0, 5)} />
           <div />
           <div className="bottom-container">
-            <div>
-              <hr className="divider" />
-            </div>
+            <hr className="divider" />
             <StoryList stories={stories.slice(5)} />
             <SuggestedStories stories={stories.slice(-5)} />
           </div>
-          {/* <hr id="divider" /> */}
         </div>
       </div>
     );
