@@ -11,6 +11,9 @@
   margin-top: 0;
   font-size: 22px;
   font-weight: 600;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
 }
 
 $light-gray: #e0e0e0;

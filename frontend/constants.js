@@ -6,3 +6,6 @@ export const UNSPLASH_ACCESS_KEY =
 
 export const UNSPLASH_SECRET =
   "6274fad91d1725cdac8b9fbd288c42e31cc56070d068ff4a926979bdbfb8e364";
+
+export const PROFILE_PIC =
+  "https://medium-well-seed.s3-us-west-1.amazonaws.com/anonymous.jpeg";

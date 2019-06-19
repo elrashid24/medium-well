@@ -227,7 +227,6 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
           test_story_11.photo.attach(io: file_11, filename: 'pigeons.jpeg')
           
           
-          
           file_7 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/jordan-gamble.jpg')
           test_story_7.photo.attach(io: file_7, filename: 'jordan-gamble.jpg')
           
@@ -241,8 +240,8 @@ No, Chamberlain did not win championships the way his arch-rival Bill Russell di
           test_story_10.photo.attach(io: file_10, filename: 'mjfluuu.jpg')
           
           
-         #  file_11 = open('https://medium-well-seed.s3-us-west-1.amazonaws.com/pigeons.jpeg')
-         #  test_story_11.photo.attach(io: file_11, filename: 'pigeons.jpeg)
+       
+
           
           
           

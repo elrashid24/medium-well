@@ -5,6 +5,7 @@ import { removeStory } from "../../util/story_actions";
 import { receiveStory } from "../../util/story_actions";
 import { connect } from "react-redux";
 import { DEFAULT_IMAGE } from "../../constants";
+import { PROFILE_PIC } from "../../constants";
 
 class UserShow extends React.Component {
   render() {
@@ -19,6 +20,9 @@ class UserShow extends React.Component {
             <p>Stories: 1</p>
             <p>Followers: 3,571,489</p>
           </div>
+          {/* <div className="profile-pic-container">
+            <img src={PROFILE_PIC} className="top-middle-pic" />
+          </div> */}
           <hr className="divider" />
           {stories.map(story => {
             return (
