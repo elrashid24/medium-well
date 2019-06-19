@@ -16,7 +16,6 @@ class CommentItem extends React.Component {
   }
 
   render() {
-    // console.log(this.props.comment);
     console.log(this.props.deleteComment);
     return (
       <div className="comment-container">

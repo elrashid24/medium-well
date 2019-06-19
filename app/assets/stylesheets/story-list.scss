@@ -10,22 +10,22 @@ $light-gray: #e0e0e0;
 }
 
 .story-item-pic {
-  height: 120px;
-  width: 170px;
+  height: 100px;
+  width: 150px;
   object-fit: cover;
   margin-left: 20px;
 }
 
 .story-item-title {
   margin-top: 0;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .story-item-preview {
   margin-top: 10px;
   margin-left: 0px;
-  font-size: 16px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.54);
   margin-bottom: 20px;
 }
@@ -33,14 +33,14 @@ $light-gray: #e0e0e0;
 .story-item-author {
   margin-top: 10px;
   margin-left: 0px;
-  font-size: 14px;
+  font-size: 10px;
   color: black;
   margin-bottom: 20px;
 }
 
 .story-list-header {
   margin-top: 50px;
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 8px;
   margin-bottom: 15px;
   color: gray;

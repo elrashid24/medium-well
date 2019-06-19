@@ -17,7 +17,7 @@
 }
 
 .nav-bar-logo {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   font-family: "Playfair Display", Georgia, serif;
   margin-left: 40px;
@@ -33,28 +33,23 @@
   height: 35px;
   border-radius: 4px;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 10px;
   text-align: center;
   background: white;
   border: none;
   color: gray;
   margin-bottom: 10px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 $size: 40px;
 .nav-bar-avi {
-  // height: $size;
-  // width: $size;
-  // border-radius: $size / 2;
-  // background-color: green;
-  // border: none;
-  // background-image: url(https://cdn.pixabay.com/photo/2017/03/05/21/55/emoticon-2120024_960_720.png);
   width: 104px;
   height: 35px;
   border-radius: 4px;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   background: white;
   border: none;
