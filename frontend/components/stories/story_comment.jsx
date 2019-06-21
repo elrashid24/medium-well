@@ -24,14 +24,17 @@ class StoryComment extends React.Component {
       body: this.state.body,
       story_id: this.props.storyId
     };
-    this.props.createComment(comment).then(
-      res => {
-        this.setState({ res: res });
-      },
-      () => {
-        this.setState({ error: "You must be logged in to leave a comment." });
-      }
-    );
+    this.props
+      .createComment(comment)
+      .then(
+        res => {
+          this.setState({ res: res });
+        },
+        () => {
+          this.setState({ error: "You must be logged in to leave a comment." });
+        }
+      )
+      .then(this.setState({ body: "" }));
   }
 
   render() {
