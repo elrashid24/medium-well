@@ -38,13 +38,11 @@ An interactive modal that lets new users create an account or demo the site
 * Conditionally rendering different slices of global and local state within the same comonent depending on if a user is signed in
 * Allowing for scalabliity of both stories and pictures without compormising stylistic integrity
 
-
 ### Snippets
 The function bellow was used to ensure that all AJAX promises were returned in JavaScript native formats  
 <img width="1105" alt="Screen Shot 2019-06-21 at 5 02 13 PM" src="https://user-images.githubusercontent.com/46327483/59959278-09e52580-9469-11e9-9d02-ca000cee5cd8.png">
 
-API calls were leverged with using the above function
-<img width="354" alt="Screen Shot 2019-06-21 at 9 11 56 PM" src="https://user-images.githubusercontent.com/46327483/59959291-3d27b480-9469-11e9-8f9c-70058a1a1e73.png">
+API calls were then leveraged with the above function
 
-
+<img width="1386" alt="Screen Shot 2019-06-21 at 9 15 46 PM" src="https://user-images.githubusercontent.com/46327483/59959326-c6d78200-9469-11e9-8f63-185237aca3ac.png">
 
