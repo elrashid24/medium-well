@@ -18,14 +18,19 @@ More features coming soon!
 Stories on the home page are seperated using 3 react components displayed using flex 
 
 
+<img width="1431" alt="Screen Shot 2019-06-21 at 4 58 26 PM" src="https://user-images.githubusercontent.com/46327483/59959177-e0c39580-9466-11e9-85d5-49377f0b5fa3.png">
+
 ### User Show
 
 A logged in user can view a list of all stories they've published since joining
 
+<img width="1438" alt="Screen Shot 2019-06-21 at 5 00 08 PM" src="https://user-images.githubusercontent.com/46327483/59959250-32b8eb00-9468-11e9-9cf1-aa55b3430cad.png">
 
 ### Log In & Sign Up
 
 An interactive modal that lets new users create an account or demo the site
+
+<img width="1437" alt="Screen Shot 2019-06-21 at 4 59 31 PM" src="https://user-images.githubusercontent.com/46327483/59959239-0b621e00-9468-11e9-8d54-4f526e602500.png">
 
 ### Challenges
 
@@ -35,8 +40,6 @@ An interactive modal that lets new users create an account or demo the site
 
 
 ### Snippets
-
-
 
 
 
