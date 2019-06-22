@@ -42,6 +42,7 @@ An interactive modal that lets new users create an account or demo the site
 ### Snippets
 The function bellow was used to ensure that all AJAX promises were returned in JavaScript native formats  
 <img width="1105" alt="Screen Shot 2019-06-21 at 5 02 13 PM" src="https://user-images.githubusercontent.com/46327483/59959278-09e52580-9469-11e9-9d02-ca000cee5cd8.png">
+
 <img width="354" alt="Screen Shot 2019-06-21 at 9 11 56 PM" src="https://user-images.githubusercontent.com/46327483/59959291-3d27b480-9469-11e9-8f9c-70058a1a1e73.png">
 
 
