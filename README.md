@@ -1,7 +1,7 @@
 # Medium Well
 [Live Demo](https://medium-well-done.herokuapp.com/#/)
 
-Medium Well is a website that allows users to share their favorite conspircay theories with the world, akin to Medium. The site uses PostgrSQL and Rails on the backend, and React.js leveraged with Redux for the frontend. 
+Medium Well is a website that allows users to share their favorite conspiracy theories with the world, akin to Medium.com. The site uses a PostgreSQL database and a Ruby on Rails backend. React.js leveraged with Redux is used on the frontend. 
 
 More features coming soon!
 
@@ -15,7 +15,7 @@ More features coming soon!
 * Comments: Gives logged in users the option to comment on stories
 
 ### Home Page
-Stories on the home page are seperated using 3 react components displayed using flex 
+Stories on the home page are separated using 3 react components displayed using flex 
 
 
 <img width="1431" alt="Screen Shot 2019-06-21 at 4 58 26 PM" src="https://user-images.githubusercontent.com/46327483/59959177-e0c39580-9466-11e9-85d5-49377f0b5fa3.png">
@@ -34,9 +34,9 @@ An interactive modal that lets new users create an account or demo the site
 
 ### Challenges
 
-* Maintaining organized and accessible slices of global state to avoid repititve prop threading between React Components 
-* Conditionally rendering different slices of global and local state within the same comonent depending on if a user is signed in
-* Allowing for scalabliity of both stories and pictures without compormising stylistic integrity
+* Maintaining organized and accessible slices of global state to avoid repetitive prop threading between React Components 
+* Conditionally rendering different slices of global and local state within the same component depending on if a user is signed in
+* Allowing for scalability of both stories and pictures without compromising stylistic integrity
 
 ### Snippets
 The function bellow was used to ensure that all AJAX promises were returned in JavaScript native formats  
