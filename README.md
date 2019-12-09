@@ -1,5 +1,4 @@
 # Medium Well
-
 <img width="1432" alt="Screen Shot 2019-12-09 at 2 25 09 PM" src="https://user-images.githubusercontent.com/46327483/70478886-041fe280-1a91-11ea-958d-02e0506f5733.png">
 
 [Live Demo](https://medium-well-done.herokuapp.com/#/)
