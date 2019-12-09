@@ -1,4 +1,7 @@
 # Medium Well
+
+<img width="1432" alt="Screen Shot 2019-12-09 at 2 25 09 PM" src="https://user-images.githubusercontent.com/46327483/70478886-041fe280-1a91-11ea-958d-02e0506f5733.png">
+
 [Live Demo](https://medium-well-done.herokuapp.com/#/)
 
 Medium Well is a website that allows users to share their favorite conspiracy theories with the world, akin to Medium.com. The site uses a PostgreSQL database and a Ruby on Rails backend. React.js leveraged with Redux is used on the frontend. 
